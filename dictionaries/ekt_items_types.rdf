@@ -1,0 +1,3113 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:ekt="https://www.semantics.gr/authorities/schemanamespaces/ekt#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<skos:ConceptScheme rdf:about="http://semantics.gr/authorities/vocabularies/ekt-item-types">
+<dc:title xml:lang="en">Cultural heritage item types</dc:title>
+<dc:title xml:lang="el">Τύποι πολιτιστικών αντικειμένων</dc:title>
+<dc:creator xml:lang="en">National Documentation Center (EKT)</dc:creator>
+<dc:creator xml:lang="el">
+Εθνικό Κέντρο Τεκμηρίωσης και Ηλεκτρονικού Περιεχομένου (ΕΚΤ)
+</dc:creator>
+<dc:description xml:lang="en">
+The vocabulary is hierarchical and bilingual and is linked to the Getty Art & Architecture Thesaurus (AAT) and the semantic thesaurus DBpedia of Wikipedia. The vocabulary is used for the homogenization and classification of the content aggregated by SearchCulture.gr, the National Aggregation Infrastructure for Cultural Heritage Content.
+</dc:description>
+<dc:description xml:lang="el">
+To δίγλωσσο, ιεραρχικό λεξιλόγιο τύπων πολιτιστικων αντικειμένων που δημιουργησε το ΕΚΤ. Οι όροι διατηρούν συνδέσμους στο Θησαυρό για τις Τέχνες και την Αρχιτεκτονική (Art & Architecture Thesaurus) - AAT του Ιδρύματος Getty και στον σημασιολογικό θησαυρό DBpedia της Wikipedia. Το Λεξιλόγιο χρησιμοποιείται για την ταξινόμηση και ομογενοποίηση του περιεχομένου που συσσωρεύεται στην Εθνική Υποδομή Συσσώρευσης Ψηφιακού Πολιτιστικού Περιεχομένου SearchCulture.gr.
+</dc:description>
+<dc:rights rdf:resource="https://creativecommons.org/licenses/by/4.0/deed.el"/>
+<dc:format>application/rdf+xml</dc:format>
+<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-19T17:48:58</dcterms:created>
+<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-14T15:38:40</dcterms:modified>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/Intangible-cultural-heritage"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/xartografiko-yliko"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/160769568"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/synola-dedomenwn"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/partitoyres"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:hasTopConcept rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+</skos:ConceptScheme>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Card">
+<skos:prefLabel xml:lang="el">Κάρτα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Card</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/taxydromikh-karta"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/trapoyla"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/afierwmatikes-kartes-agiwn"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/eyxethria-karta"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1404655680"/>
+<skos:definition xml:lang="en">
+Rectangular pieces of stiff paper or plastic, usually of standard dimensions, used as a support on which information is typed, written, or transcribed.
+</skos:definition>
+<skos:definition xml:lang="el">
+Ορθογώνια κομμάτια από άκαμπτο χαρτί ή πλαστικό, συνήθως τυποποιημένων διαστάσεων, που χρησιμοποιούνται ως βάση πάνω στην οποία πληκτρολογούνται, γράφονται ή μεταγράφονται πληροφορίες.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026756">
+<rdfs:label xml:lang="en">cards (information artifacts)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Κάρτες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Cards</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/788924512">
+<skos:prefLabel xml:lang="el">Τηλεπικοινωνιακός εξοπλισμός</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Telecommunication equipment</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300052758">
+<rdfs:label xml:lang="en">telecommunication systems components</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/egxeiridio">
+<skos:prefLabel xml:lang="en">Manual</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Εγχειρίδιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="en">
+Books or treatises, often compendious, containing rules or instructions needed to perform tasks, operations, processes, occupations, arts, or studies, and intended to be used as reference while the task or study is performed.
+</skos:definition>
+<skos:definition xml:lang="el">
+Βιβλία ή διατριβές που περιέχουν κανόνες ή οδηγίες που απαιτούνται για την εκτέλεση καθηκόντων, λειτουργιών, διαδικασιών, επαγγελμάτων, τεχνών ή μελετών και προορίζονται να χρησιμοποιηθούν ως αναφορά ενώ εκτελείται το έργο ή η μελέτη
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026395">
+<rdfs:label xml:lang="en">manuals (instructional materials)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Εγχειρίδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Manuals</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Proverb">
+<skos:prefLabel xml:lang="el">Παροιμία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Proverb</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Intangible-cultural-heritage"/>
+<skos:definition xml:lang="en">
+Short, concise sayings repeated colloquially expressing a general truth or observation about human life or behavior, often embodying the folk wisdom of a group or nation. Distinguished from "aphorisms" which are statements of principle or precepts, often of known authorship.
+</skos:definition>
+<skos:definition xml:lang="el">
+Σύντομες, συνοπτικές και επαναλαμβανόμενες δηλώσεις, που εκφράζουν μια γενική αλήθεια ή παρατήρηση σχετικά με την ζωή των ανθρώπων ή την συμπεριφορά αυτών. Συχνά ενσωματώνουν τη λαϊκή σοφία μιας ομάδας ή έθνους, ενώ διακρίνονται από τους "αφορισμούς" που είναι δηλώσεις αρχών ή εντολών, συχνά γνωστών συγγραφέων.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300188783">
+<rdfs:label xml:lang="en">proverbs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/arxitektoniko-sxedio">
+<skos:prefLabel xml:lang="en">Architectural drawing</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αρχιτεκτονικό σχέδιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/texniko-sxedio"/>
+<skos:definition xml:lang="el">
+Σχέδια αρχιτεκτονικής και σχέδια για αρχιτεκτονικά έργα, ανεξάρτητα από το εάν το έργο εκτελέστηκε ή όχι. Αποτυπώνουν το σχεδιασμό και την υλοποίηση διαφόρων κατασκευών, όπως χώρων (π.χ. πόλεων), κτιρίων, οικοδομών με έμφαση στην εργονομία και στην αισθητική τους. Ο όρος μπορεί επίσης να αναφέρεται σε οποιαδήποτε εικόνα σε ένα δισδιάστατο μέσο που εξυπηρετεί τον ίδιο σκοπό, συμπεριλαμβανομένων των εκτυπώσεων και των εικόνων του υπολογιστή.
+</skos:definition>
+<skos:definition xml:lang="en">
+Drawings of architecture and drawings for architectural projects, whether the project was executed or not. The term may also refer to any image in a two-dimensional medium that serves this same purpose, including prints and computer images
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300034787">
+<rdfs:label xml:lang="en">architectural drawings (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Architectural drawings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αρχιτεκτονικά σχέδια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/diagramma251">
+<skos:prefLabel xml:lang="el">Διάγραμμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Chart</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/sxedioskitso"/>
+<skos:definition xml:lang="el">
+Μια πινακοειδής ή γραφική αναπαράσταση μιας κυμαινόμενης ή εξαρτώμενης μεταβλητής, όπως μέγεθος, θερμοκρασία, κόστος κλπ.
+</skos:definition>
+<skos:definition xml:lang="en">
+A tabular or graphic representation of a fluctuating or dependent variable, such as magnitude, temperature, cost, etc.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026848">
+<rdfs:label xml:lang="en">charts (graphic documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Διαγράμματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Charts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/agiografia">
+<skos:prefLabel xml:lang="el">Φορητή Εικόνα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Icon</skos:prefLabel>
+<skos:altLabel xml:lang="el">Αγιογραφία</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Religious-visual-works"/>
+<skos:definition xml:lang="el">
+Εικόνες που απεικονίζουν μια ιερή οντότητα (Χριστιανική). Παράγονται για ιδιωτική και δημόσια λατρευτική χρήση.
+</skos:definition>
+<skos:definition xml:lang="en">
+Ιmages that portray a sacred entity (Christian) produced for devotional use in the church or home.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300033945">
+<rdfs:label xml:lang="en">icons (devotional images)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Φορητές εικόνες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Icons</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/koykla">
+<skos:prefLabel xml:lang="el">Κούκλα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Doll</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/oikopaignio"/>
+<ekt:prefLabelInPlural xml:lang="el">Dolls</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Κούκλες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/diatribh">
+<skos:prefLabel xml:lang="el">Διατριβή</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Dissertation or thesis (original)</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="en">
+Written treatises, or the records of a discourse on a subject, usually prepared and presented as the final requirement for a degree or diploma and typically based on independent research and giving evidence of the candidate's mastery of the subject and of scholarly method.
+</skos:definition>
+<skos:definition xml:lang="el">
+Πρωτότυπο κείμενο έρευνας για ένα θέμα που συνήθως προετοιμάζεται και παρουσιάζεται ως η τελική απαίτηση για την απόκτηση ενός διπλώματος ή πτυχίου. Μια διατριβή κατά το πλείστον βασίζεται στην ανεξάρτητη έρευνα του υποψηφίου, γεγονός που επιβεβαιώνει και αποδεικνύει την ορθή ακαδημαική του μεθοδολογία και την γνώση που έχει επί του αντικειμένου που μελέτησε.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028029">
+<rdfs:label xml:lang="en">dissertations</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Διατριβές</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Dissertations</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/kosmhma">
+<skos:prefLabel xml:lang="en">Jewellery</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κόσμημα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Κοσμήματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Jewellery</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/anakoinwsh">
+<skos:prefLabel xml:lang="en">Announcement</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Ανακοίνωση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/press-release"/>
+<skos:definition xml:lang="el">
+Έντυπες, προφορικές ή δημοσιευμένες δηλώσεις που ενημερώνουν τον αναγνώστη για μια εκδήλωση ή άλλα νέα.
+</skos:definition>
+<skos:definition xml:lang="en">
+"Printed, spoken, or published statements or notices that inform the reader of an event or other news. "
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026707">
+<rdfs:label xml:lang="en">announcements</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Announcements</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ανακοινώσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/biografia">
+<skos:prefLabel xml:lang="el">Βιογραφία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Biography</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="en">
+The genre of nonfiction that concerns accounts of the lives of individuals
+</skos:definition>
+<skos:definition xml:lang="el">
+Είδος που περιλαμβάνει τα λογοτεχνικά έργα λεπτομερούς καταγραφής της ζωής ενός ατόμου
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055908">
+<rdfs:label xml:lang="en">biography (general genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Βιογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Biographies</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/eyrethrio">
+<skos:prefLabel xml:lang="el">Ευρετήριο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Index</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/151480982"/>
+<skos:definition xml:lang="el">
+Αλφαβητική λίστα όρων (π.χ. ονομάτων ή θεμάτων) με πληροφορίες σχετικά με τον εντοπισμό τους.
+</skos:definition>
+<skos:definition xml:lang="en">
+Systematic guides to the contents of texts, files, documents, or collections, presented as a list, usually in alphabetical order, of persons and/or subjects referred to in documents, with location of references thereto.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026554">
+<rdfs:label xml:lang="en">indexes (reference sources)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Indexes</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ευρετήρια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/paramythi">
+<skos:prefLabel xml:lang="en">Folktale</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Παραμύθι</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="en">
+Traditional stories or legends in a given culture that are passed down over time, often orally
+</skos:definition>
+<skos:definition xml:lang="el">
+Παραδοσιακές ιστορίες ή θρύλοι ενός πολιτισμού που μεταφέρονται από τη μια γενιά στην επόμενη, συχνά με προφορικό τρόπο
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055922">
+<rdfs:label xml:lang="en">folk tales</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Play">
+<skos:prefLabel xml:lang="el">Θεατρική παράσταση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Play</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:definition xml:lang="el">
+Δραματική παράσταση που παρουσιάζεται από ηθοποιούς ενώπιον ακροατηρίου
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300201028">
+<rdfs:label xml:lang="en">plays (performing arts compositions)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Plays</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Θεατρικές παραστάσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1546658699">
+<skos:prefLabel xml:lang="en">Note</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σημείωμα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027200">
+<rdfs:label xml:lang="en">notes (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σημειώματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Notes</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/osto">
+<skos:prefLabel xml:lang="el">Οστέινο αντικείμενο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Bone</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/page/aat/300011798">
+<rdfs:label xml:lang="el">Bone (material)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Bones (material)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Οστέινα αντικείμενα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/eggrafo">
+<skos:prefLabel xml:lang="el">Έγγραφο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Document</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ekthesh-anafora"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/allhlografia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/nomikh-ypothesh-kai-shmeiwma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/800014889"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/2140143048"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026031">
+<rdfs:label xml:lang="en">document genres</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/proplasma">
+<skos:prefLabel xml:lang="el">Πρόπλασμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Model</skos:prefLabel>
+<skos:altLabel xml:lang="en">Mockup</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/montelo230"/>
+<ekt:prefLabelInPlural xml:lang="en">Dummies</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Προπλάσματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Mockups</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Models</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/anamnhstiko-antikeimeno-soybenir">
+<skos:prefLabel xml:lang="en">Souvenir</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αναμνηστικό αντικείμενο (σουβενίρ)</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028886">
+<rdfs:label xml:lang="en">souvenirs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Souvenirs</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αναμνηστικά αντικείμενα (σουβενίρ)</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Identifying-marking">
+<skos:prefLabel xml:lang="el">Σήμα (σύμβολο)</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Identifying marking</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300157238">
+<rdfs:label xml:lang="en">identifying markings and symbols</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σήματα (σύμβολα)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Identifying markings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/mhxanhma">
+<skos:prefLabel xml:lang="el">Μηχάνημα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Machine</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1435790784"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1926836704"/>
+<ekt:prefLabelInPlural xml:lang="el">Μηχανήματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Machines</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/toixografia">
+<skos:prefLabel xml:lang="en">Murals</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τοιχογραφία</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/zwgrafikh"/>
+<skos:definition xml:lang="en">
+Painted decorations or scenes that dominate a wall (or ceiling) surface.
+</skos:definition>
+<skos:definition xml:lang="el">
+Ζωγραφικές αναπαραστάσεις που κυριαρχούν σε επιφάνεια τοίχου (ή οροφής).
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300033644">
+<rdfs:label xml:lang="en">mural paintings (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τοιχογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Murals</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/dihghma">
+<skos:prefLabel xml:lang="el">Διήγημα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Short story</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="el">Έργο σύντομης σε έκταση αφηγηματικής πεζογραφίας</skos:definition>
+<skos:definition xml:lang="en">Relatively brief invented prose narratives</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300202607">
+<rdfs:label xml:lang="en">short stories</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Short_story">
+<rdfs:label xml:lang="en">Short story</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Short stories</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Διηγήματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/korniza">
+<skos:prefLabel xml:lang="en">Frame</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κορνίζα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Κορνίζες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Frames</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Images-and-ornament-for-layout-features">
+<skos:prefLabel xml:lang="el">Εικόνες και διακόσμηση έκδοσης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Images and ornament for layout features</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/-Illustration-layout-features"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300203061">
+<rdfs:label xml:lang="en">images and ornament for layout features</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/403137696">
+<skos:prefLabel xml:lang="el">Βιντεοσκόπηση συναυλίας</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Concert videorecording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/416998368"/>
+<skos:broadMatch>
+<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q430525">
+<rdfs:label xml:lang="en">concert film</rdfs:label>
+</rdf:Description>
+</skos:broadMatch>
+<ekt:prefLabelInPlural xml:lang="en">Concert videorecordings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Βιντεοσκοπήσεις συναυλιών</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1753481152">
+<skos:prefLabel xml:lang="el">Ηχογράφηση παράστασης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Performance recording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/2078851744"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1890717632"/>
+<ekt:prefLabelInPlural xml:lang="en">Performance recordings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ηχογραφήσεις παραστάσεων</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/maska">
+<skos:prefLabel xml:lang="el">Μάσκα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Mask</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Μάσκες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Masks</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ergo-thrhskeytikhs-texnhs">
+<skos:prefLabel xml:lang="en">Religious visual works</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έργο θρησκευτικής τέχνης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300234093">
+<rdfs:label xml:lang="en">religious visual works</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Religious visual works (3D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Έργο θρησκευτικής τέχνης (τρισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Religious visual works (3D)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έργα θρησκευτικής τέχνης</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/glypto">
+<skos:prefLabel xml:lang="el">Γλυπτό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Sculpture</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/eidwlio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300047090">
+<rdfs:label xml:lang="en">sculpture (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Γλυπτά</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Sculptures</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/endyma">
+<skos:prefLabel xml:lang="el">Ενδυμασία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Costume (mode of fashion)</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300178802">
+<rdfs:label xml:lang="en">costume (mode of fashion)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Costumes</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ενδυμασίες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/statistikh">
+<skos:prefLabel xml:lang="el">Στατιστική</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Statistics</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/meleth"/>
+<skos:definition xml:lang="en">
+Numerical data on a specific subject, systematically accumulated, often presented in tables
+</skos:definition>
+<skos:definition xml:lang="el">
+Αριθμητικά δεδομένα για ένα συγκεκριμένο θέμα που συγκεντρώνονται συστηματικά και συνήθως παρουσιάζονται σε πίνακες.
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="el">Στατιστικές</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/moysiko-kommati">
+<skos:prefLabel xml:lang="en">Music track</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μουσικό κομμάτι</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:definition xml:lang="en">
+Phases in the creative process during which musical ideas are realized and transmitted to a listener
+</skos:definition>
+<skos:definition xml:lang="el">
+Στάδια της μουσικής δημιουργικής διαδικασίας, κατά τη διάρκεια των οποίων μουσικές ιδέες υλοποιούνται και μεταδίδονται στον ακροατή.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300262956">
+<rdfs:label xml:lang="en">musical performances</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Μουσικά κομμάτια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Music tracks</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/partial-document">
+<skos:prefLabel xml:lang="el">Τμήμα βιβλίου</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Book part</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Book-page"/>
+<ekt:prefLabelInPlural xml:lang="el">Book parts</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Τμήματα βιβλίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Concert">
+<skos:prefLabel xml:lang="en">Concert</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Συναυλία</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:definition xml:lang="el">Μουσική παράσταση, συνήθως δημόσια.</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300069210">
+<rdfs:label xml:lang="en">concerts (performances)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Συναυλίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Concerts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/fwtoarnhtika">
+<skos:prefLabel xml:lang="en">Photonegative</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φωτοαρνητικό</skos:prefLabel>
+<skos:altLabel xml:lang="en">negative</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtografia"/>
+<skos:definition xml:lang="en">
+Photographs in which the tones or colors are reversed from their appearance in nature, usually on a transparent support of celluloid, acetate, or on paper, intended for the purpose of producing positive prints
+</skos:definition>
+<skos:definition xml:lang="el">
+Ένα κομμάτι φιλμ, ένας γυάλινος πίνακας ή χαρτί στο οποίο εμφανίζεται μία 'αρνητική' εικόνα, στην οποία οι αποχρώσεις ή τα χρώματα αντιστρέφονται από την φυσική τους εμφάνιση με σκοπό την παραγωγή θετικών εκτυπώσεων
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300127173">
+<rdfs:label xml:lang="en">negatives (photographs)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Φωτοαρνητικά</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Photonegatives</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/fylladia">
+<skos:prefLabel xml:lang="en">Leaflet</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φυλλάδιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300211825">
+<rdfs:label xml:lang="en">leaflets (printed works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Φυλλάδιο (κείμενο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Leaflet (text)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Φυλλάδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Leaflets</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/personal-accessories">
+<skos:prefLabel xml:lang="el">Προσωπικό αντικείμενο (αξεσουάρ)</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Personal accessory</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404589">
+<rdfs:label xml:lang="en">personal accessories</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Προσωπικά αντικείμενα (αξεσουάρ)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Accessories</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/nomisma">
+<skos:prefLabel xml:lang="en">Coin</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Νόμισμα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Νομίσματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Coins</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/oplo">
+<skos:prefLabel xml:lang="el">Όπλο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Arm</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<ekt:prefLabelInPlural xml:lang="en">Guns</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Όπλα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Weapons</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Stamp">
+<skos:prefLabel xml:lang="el">Γραμματόσημο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Stamp</skos:prefLabel>
+<skos:altLabel xml:lang="en">postage stamp</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:definition xml:lang="el">
+Εγκριθέντα από την κυβέρνηση τυπωμένα αυτοκόλλητα, χάρτινες σφραγίδες ή σημάνσεις μετρητών που εκδίδονται ως απόδειξη της προπληρωμής των ταχυδρομικών τελών.
+</skos:definition>
+<skos:definition xml:lang="en">
+Government-authorized adhesive stamps, imprinted stamps, hand stamps, or meter markings issued as evidence of prepayment of postage.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300037321">
+<rdfs:label xml:lang="en">postage stamps</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Stamps</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Γραμματόσημα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Sketch">
+<skos:prefLabel xml:lang="en">Sketch</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Ζωγραφικό σχέδιο / Σκίτσο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/sxedioskitso"/>
+<skos:definition xml:lang="el">
+Πρόχειρα ή συνοπτικά ζωγραφικά έργα τέχνης. Λιγότερο ολοκληρωμένα από τις μελέτες.
+</skos:definition>
+<skos:definition xml:lang="en">
+Rough or summary art works; less finished than studies.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300015617">
+<rdfs:label xml:lang="en">sketches</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ζωγραφικά σχέδια / Σκίτσα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Sketches</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1538127200">
+<skos:prefLabel xml:lang="en">Film</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κινηματογραφικό έργο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300054141">
+<rdfs:label xml:lang="en">film (discipline)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Κινηματογραφικά έργα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Films</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/synenteyksh167">
+<skos:prefLabel xml:lang="el">Συνέντευξη</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Interview</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:definition xml:lang="el">
+Δηλώσεις, μεταγραφές ή καταγραφές συζητήσεων, στις οποίες ένα άτομο λαμβάνει πληροφορίες από ένα άλλο, είτε για ερευνητικούς σκοπούς, είτε για δημοσίευση, μετάδοση, ή άλλους λόγους.
+</skos:definition>
+<skos:definition xml:lang="en">
+"Statements, transcripts, or recordings of conversations in which one person obtains information from another such as for research purposes, publication, or broadcast. "
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026392">
+<rdfs:label xml:lang="en">interviews</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Συνέντευξη (ηχογράφηση)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Interview (recording)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Interviews</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Συνεντεύξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ostrako">
+<skos:prefLabel xml:lang="el">Όστρακο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Ostracon</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/thraysma"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/page/aat/300185396">
+<rdfs:label xml:lang="en">Ostraca</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Όστρακα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Ostraca</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Pottery fragments</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Printed-material">
+<skos:prefLabel xml:lang="en">Printed material</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έντυπο υλικό</skos:prefLabel>
+<skos:altLabel xml:lang="en">Printout</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/afisa"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Leaflet"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/apokomma246"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1831873263"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Theatrical-program"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/aytokollhth-etiketa"/>
+<skos:definition xml:lang="el">
+Είδος γραπτού έργου που δημοσιεύεται ή εναλαλκτικά διατίθεται σε έντυπη μορφή, συνήθως σε χαρτί.
+</skos:definition>
+<skos:definition xml:lang="en">
+Genre of written works published or otherwise available in printed form, usually on paper.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404588">
+<rdfs:label xml:lang="en">printed materials (object genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Newspaper-part">
+<skos:prefLabel xml:lang="en">Newspaper part</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τμήμα εφημερίδας</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Newspaper-front-page"/>
+<ekt:prefLabelInPlural xml:lang="el">Τμήματα εφημερίδας</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Newspaper parts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/aytobiografia">
+<skos:prefLabel xml:lang="el">Αυτοβιογραφία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Autobiography</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="en">
+Literary genre of accounts of a person's life given by themselves
+</skos:definition>
+<skos:definition xml:lang="el">
+Είδος που περιλαμβάνει τα λογοτεχνικά έργα απολογισμού και εξιστόρησης της ζωής ενός ατόμου όπως δίνεται από τον ίδιο.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026049">
+<rdfs:label xml:lang="en">autobiography (genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Αυτοβιογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Autobiographies</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ektypwsh">
+<skos:prefLabel xml:lang="el">Εκτύπωση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Print</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Stamp"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Identifying-marking"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/banknote"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1471871711"/>
+<skos:definition xml:lang="en">
+Pictorial works produced by transferring images by means of a matrix such as a plate, block, or screen, using any of various printing processes.
+</skos:definition>
+<skos:definition xml:lang="el">
+Εικονογραφικά έργα που παράγονται με την μεταφορά εικόνων, κειμένων, κ.λπ., πάνω σε χαρτί ή άλλο υλικό με την χρήση μίας από τις τυπογραφικές μεθόδους (διαδικασίες εκτύπωσης).
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300041273">
+<rdfs:label xml:lang="en">prints (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Εκτυπώσεις</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Prints</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/katalogos">
+<skos:prefLabel xml:lang="el">Κατάλογος</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Catalogue</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1682019360"/>
+<skos:definition xml:lang="en">
+Enumerations of items, such as a file of bibliographic records or a list of art objects, usually arranged systematically and with descriptive details; may be in book or pamphlet form, on cards, or online.
+</skos:definition>
+<skos:definition xml:lang="el">
+Λίστα αντικειμένων που ανήκουν στην ίδια συλλογή ή έκτίθενται μαζί, ή παρέχονται από κοινό διαθέτη (π.χ. εκδότη ή βιβλιοπωλείο).
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026059">
+<rdfs:label xml:lang="en">catalogs (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Catalogues</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Κατάλογοι</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Needlework">
+<skos:prefLabel xml:lang="el">Εργόχειρο (Κεντητική, πλεκτική)</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Needlework</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/household-accessories"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300264072">
+<rdfs:label xml:lang="en">needlework (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Needlework</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Εργόχειρα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/sfragida">
+<skos:prefLabel xml:lang="en">Seal</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σφραγίδα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/sfragidolithos"/>
+<ekt:prefLabelInPlural xml:lang="el">Σφραγίδες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Seals</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Intangible-cultural-heritage">
+<skos:prefLabel xml:lang="el">Άυλη πολιτιστική κληρονομιά</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Intangible cultural heritage</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Tradition"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Proverb"/>
+<skos:definition xml:lang="en">
+Practices, representations, expressions, knowledge, skills – as well as the instruments, objects, artefacts and cultural spaces associated therewith – that communities, groups and, in some cases, individuals recognize as part of their cultural heritage.
+</skos:definition>
+<skos:definition xml:lang="el">
+Συνιφασμένες με την πολιτιστική κληρονομιά πρακτικές, αναπαραστάσεις,εκφράσεις, γνώση, ικανότητες - καθώς και όργανα, αντικείμενα, τεχνουργήματα και πολιτισμικοί χώροι συσχετισμένοι με αυτά.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404727">
+<rdfs:label xml:lang="en">intangible cultural heritage</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos">
+<skos:prefLabel xml:lang="el">Εργαλεία και εξοπλισμός</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Tools and equipment</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/788924512"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/oplo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1687916414"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1235004096"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/biomhxanikh-paragwgh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/household-accessories"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/moysiko-organo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/mhxanhma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/athlhtikos-eksoplismos"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/55729028">
+<skos:prefLabel xml:lang="en">Passport</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Διαβατήριο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2140143048"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027392">
+<rdfs:label xml:lang="en">passports</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Διαβατήρια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Passports</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1994723278">
+<skos:prefLabel xml:lang="el">Δελτίο ταυτότητας</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Identity card</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2140143048"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026799">
+<rdfs:label xml:lang="en">identity cards</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Δελτία ταυτότητας</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Identity cards</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/46195552">
+<skos:prefLabel xml:lang="el">Τρισδιάστατο μοντέλο από 3D σάρωση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">3D model from scanning</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/160769568"/>
+<ekt:prefLabelInPlural xml:lang="el">Τρισδιάστατα μοντέλα από 3D σάρωση</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">3d scans</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/87513344">
+<skos:prefLabel xml:lang="en">Theater play videorecording</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Βιντεοσκόπηση θεατρικής παράστασης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/416998368"/>
+<ekt:prefLabelInPlural xml:lang="el">Βιντεοσκoπήσεις θεατρικής παράστασης</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Theater play videorecordings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Event">
+<skos:prefLabel xml:lang="el">Εκδήλωση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Event</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:definition xml:lang="el">
+Ηχογράφηση δημόσιας συνεργατικής πράξης ή δραστηριότητας για ποικίλους σκοπούς (εορταστικούς, επετειακούς, διαμαρτυρίας κ.ά.)
+</skos:definition>
+<skos:definition xml:lang="en">
+Sound recording of occurrences taking place during a particular interval of time.
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="en">Events</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Εκδηλώσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1163199344">
+<skos:prefLabel xml:lang="el">Έργο τέχνης μεικτής τεχνικής</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Mixed media work of art</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:definition xml:lang="en">Visual works created using multiple media.</skos:definition>
+<skos:definition xml:lang="el">Έργα που δημιουργήθηκαν με χρήση πολλαπλών μέσων.</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404586">
+<rdfs:label xml:lang="en">mixed media works</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Mixed media work of art (3D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Έργο τέχνης μεικτής τεχνικής (τρισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Mixed media works of art (3D)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έργα τέχνης μεικτής τεχνικής</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/oikopaignio">
+<skos:prefLabel xml:lang="en">Toy</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Παιχνίδι</skos:prefLabel>
+<skos:altLabel xml:lang="el">Οικοπαίγνιο</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/koykla"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300211037">
+<rdfs:label xml:lang="en">toys (recreational artifacts)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Παιχνίδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Toys</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/xarths">
+<skos:prefLabel xml:lang="en">Map</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Χάρτης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/xartografiko-yliko"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028094">
+<rdfs:label xml:lang="en">maps (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Maps</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Χάρτες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/sfragidolithos">
+<skos:prefLabel xml:lang="el">Σφραγιδόλιθος</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Sealstone</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/sfragida"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300047216">
+<rdfs:label xml:lang="en">intaglios (sculptural objects)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σφραγιδόλιθοι</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Sealstones</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/zwgrafikh">
+<skos:prefLabel xml:lang="en">Painting</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έργο ζωγραφικής</skos:prefLabel>
+<skos:altLabel xml:lang="el">Ζωγραφικό έργο</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/toixografia"/>
+<skos:definition xml:lang="en">
+Unique works in which images are formed primarily by the direct application of pigments onto a generally two-dimensional surface.
+</skos:definition>
+<skos:definition xml:lang="el">
+Μοναδικά έργα στα οποία οι εικόνες σχηματίζονται κατά κύριο λόγο από την άμεση εφαρμογή χρωστικών πάνω σε μια δισδιάστατη επιφάνεια.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300033618">
+<rdfs:label xml:lang="en">paintings (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Έργα ζωγραφικής</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Paintings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Prize">
+<skos:prefLabel xml:lang="en">Prize</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έπαθλο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300225692">
+<rdfs:label xml:lang="en">prizes</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Prizes</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έπαθλα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Literary-work">
+<skos:prefLabel xml:lang="en">Literary work</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λογοτεχνικό έργο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/dihghma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1963796544"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/apomnhmoneymata"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/dokimio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/mythistoriografia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/poihsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/biografia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Monograph-"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/aytobiografia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/paramythi"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1979799648"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/132867776"/>
+<skos:definition xml:lang="en">
+General term for the genre of works, written or oral, that are the result or product of literary activity.
+</skos:definition>
+<skos:definition xml:lang="el">
+Tα γραπτά και προφορικά προϊόντα του έντεχνου λόγου
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Literature">
+<rdfs:label xml:lang="en">Literature</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300417585">
+<rdfs:label xml:lang="en">literature (general genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/apokomma">
+<skos:prefLabel xml:lang="el">Απόκομμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Clipping</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="en">
+Illustrations, pages, articles, or columns of text removed from books, newspapers, journals, or other printed sources and kept for their informational content.
+</skos:definition>
+<skos:definition xml:lang="el">
+Εικονογραφήσεις, σελίδες, άρθρα ή στήλες κειμένου που έχουν αφαιρεθεί από βιβλία, εφημερίδες, περιοδικά ή άλλες τυπωμένες πηγές και διατηρούνται για το ενημερωτικό τους περιεχόμενο.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026867">
+<rdfs:label xml:lang="en">clippings (information artifacts)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Clipping (text)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Απόκομμα (κείμενο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Clipings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αποκόμματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/epiplwsh">
+<skos:prefLabel xml:lang="el">Επίπλωση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Furniture</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/household-accessories"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300037680">
+<rdfs:label xml:lang="en">furniture</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/moysiko-organo">
+<skos:prefLabel xml:lang="en">Musical instrument</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μουσικό όργανο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300041620">
+<rdfs:label xml:lang="en">musical instruments</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Musical instruments</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Μουσικά όργανα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/athlhtikos-eksoplismos">
+<skos:prefLabel xml:lang="el">Αθλητικός εξοπλισμός</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Sports and athletic equipment</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300211035">
+<rdfs:label xml:lang="en">sports and athletic equipment</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1926836704">
+<skos:prefLabel xml:lang="el">Ηλεκτρονικός υπολογιστής</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Computer</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/mhxanhma"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300024521">
+<rdfs:label xml:lang="en">computers</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Computers</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ηλεκτρονικοί υπολογιστές</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/poihsh">
+<skos:prefLabel xml:lang="el">Ποίημα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Poem</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="el">
+Γραπτές ή προφορικές συνθέσεις που χρησιμοποιoύν αισθητικές και ρυθμικές ιδιότητες της γλώσσας, κατάλληλα επιλεγμένες για την ηχητική και υποδηλωτική τους ισχύ καθώς και συμπυκνωμένο νόημα. Στην ποίηση γίνεται χρήση λογοτεχνικών τεχνικών όπως δομημένο μέτρο, φυσικός ρυθμός, ομοιοκαταληξία και μεταφορά
+</skos:definition>
+<skos:definition xml:lang="en">
+Written or oral compositions characterized by condensed language chosen for sound and suggestive power as well as meaning, and by the use of such literary techniques as structured meter, natural cadences, rhyme, or metaphor
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026451">
+<rdfs:label xml:lang="en">poems</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ποιήματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Poems</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1235004096">
+<skos:prefLabel xml:lang="en">Lliturgical object</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λειτουργικό αντικείμενο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300234147">
+<rdfs:label xml:lang="en">liturgical objects</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Lliturgical objects</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Λειτουργικά αντικείμενα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ekthesh-dihghsh">
+<skos:prefLabel xml:lang="en">Oral history</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Προφορική ιστορία</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:definition xml:lang="el">
+Η προφορική εξιστόρηση ενός γεγονότος ή μιας σειράς γεγονότων που είτε συνέβησαν είτε προέκυψαν από τη φαντασία κάποιου
+</skos:definition>
+<skos:definition xml:lang="en">
+Generally, giving an account. In the context of journalism, gathering and writing, or narrating by phone or broadcast, news events for newspapers, radio, or television
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300202595">
+<rdfs:label xml:lang="en">oral histories (literary genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Oral histories</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Προφορικές ιστορίες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ekthesh-anafora">
+<skos:prefLabel xml:lang="el">Έκθεση-Αναφορά</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Report</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:definition xml:lang="en">
+Official or formal records of a special investigation, in the form of documents containing presentations of facts, proceedings, investigations, or events
+</skos:definition>
+<skos:definition xml:lang="el">
+Επίσημο ή τυπικό αρχείο ειδικής έρευνας, με τη μορφή εγγράφων που περιέχουν παρουσιάσεις γεγονότων, διαδικασιών, ερευνών ή συμβάντων
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027267">
+<rdfs:label xml:lang="en">reports</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Reports</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Εκθέσεις-Αναφορές</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/keramiko-antikeimeno">
+<skos:prefLabel xml:lang="en">Ceramic ware</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κεραμικό αντικείμενο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300386879">
+<rdfs:label xml:lang="en">ceramic ware (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Ceramics</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Κεραμικό αντικείμενο</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/epigrafh">
+<skos:prefLabel xml:lang="en">Inscription</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Επιγραφή</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Επιγραφές</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Inscriptions</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ktirio">
+<skos:prefLabel xml:lang="el">Κτίριο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Building</skos:prefLabel>
+<skos:altLabel xml:lang="el">Κτήριο</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/naos-"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1003333568"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/2057870176"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300004792">
+<rdfs:label xml:lang="en">buildings (structures)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Buildings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Κτίρια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/diskio">
+<skos:prefLabel xml:lang="en">Disk</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Δισκίο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300251427">
+<rdfs:label xml:lang="en">disks (object genres)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Δισκία</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Disks</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/fysika-deigmata">
+<skos:prefLabel xml:lang="el">Φυσικό δείγμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Specimen</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:definition xml:lang="en">
+<p>&Pi;&epsilon;&rho;&iota;&lambda;&alpha;&mu;&beta;ά&nu;&omicron;&nu;&tau;&alpha;&iota; &beta;&iota;&omicron;&lambda;&omicron;&gamma;&iota;&kappa;ά &delta;&epsilon;ί&gamma;&mu;&alpha;&tau;&alpha;, &alpha;&pi;&omicron;&lambda;&iota;&theta;ώ&mu;&alpha;&tau;&alpha; &kappa;&lambda;&pi;.</p>
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="en">Speciments</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Φυσικά δείγματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Replica">
+<skos:prefLabel xml:lang="el">Αντίγραφο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Replica</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="en">
+Precise reproductions of valued objects, usually in the same dimensions as the original. Use also when more than one similar object is produced by the same artist, craftsman, or studio, with little or no variation between them; if variation is apparent, use ""versions."" Distinct from ""forgeries"" and ""counterfeits,"" which are produced with the intent to deceive.
+</skos:definition>
+<skos:definition xml:lang="el">
+Ακριβείς αναπαραγωγές αντικειμένων μεγάλης αξίας, που συνήθως έχουν τις ίδιες διαστάσεις με το πρωτότυπο. Ο όρος χρησιμοποιείται επίσης όταν γίνεται λόγος για την παραγωγή περισσότερων από ένα παρόμοιων αντικειμένων από τον ίδιο καλλιτέχνη, τεχνίτη ή στούντιο, που φέρουν ελάχιστες ή και καθόλου παραλλαγές μεταξύ τους. Εάν η παραλλαγή είναι εμφανής, τότε χρησιμοποιείται ο όρος ""εκδοχές"". Τα αντίγραφα διακρίνονται από τα ""πλαστά"", τα οποία παράγονται με την πρόθεση να εξαπατήσουν.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300015642">
+<rdfs:label xml:lang="en">replicas</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Replica (2D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Αντίγραφο (δισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Αντίγραφα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Replicas</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/anaglyfo">
+<skos:prefLabel xml:lang="el">Ανάγλυφο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Relief</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1194717724"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300053622">
+<rdfs:label xml:lang="en">relief (sculpture techniques)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ανάγλυφα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Reliefs</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/fwtografikh-diafaneia">
+<skos:prefLabel xml:lang="el">Φωτογραφική διαφάνεια</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Slide</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtografia"/>
+<skos:definition xml:lang="en">
+Positive transparencies in mounts suitable for projection, usually 35mm film in a mount of 2 by 2 inches. An image on film or glass, usually positive, intended to be viewed by means of light passing through the image and base using a viewer or projector
+</skos:definition>
+<skos:definition xml:lang="el">
+Θετικές διαφάνειες σε βάσεις κατάλληλες για προβολή, συνήθως φιλμ 35mm σε μια βάση 2 με 2 ίντσες. Μια εικόνα σε φιλμ ή γυαλί, συνήθως θετική, που προορίζεται να προβληθεί με τη βοήθεια φωτός που διέρχεται από την εικόνα και τη βάση χρησιμοποιώντας μια συσκευή προβολής ή έναν προβολέα
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300128371">
+<rdfs:label xml:lang="en">slides (photographs)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Slides</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Φωτογραφικές διαφάνειες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/taxydromikh-karta">
+<skos:prefLabel xml:lang="en">Postcard</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Ταχυδρομική κάρτα</skos:prefLabel>
+<skos:altLabel xml:lang="el">Καρτ Ποστάλ</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<skos:definition xml:lang="en">
+Cards on which a message may be written or printed for mailing without an envelope, usually at a lower rate than that for letters in envelopes.
+</skos:definition>
+<skos:definition xml:lang="el">
+Κάρτα με γραφιστική απεικόνιση στη μία πλευρά που φέρει χειρόγραφο ή τυπωμένο μήνυμα και αποστέλλεται χωρίς φάκελο.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026816">
+<rdfs:label xml:lang="en">postcards</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ταχυδρομικές κάρτες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Postcards</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/pshfidwto">
+<skos:prefLabel xml:lang="el">Ψηφιδωτό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Mosaic</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="el">
+Εικόνες ή μοτίβα που αποτελούνται από μικρά, με συστηματικό τρόπο διαμορφωμένα κομμάτια ανθεκτικού υλικού, συνήθως πέτρας ή έγχρωμου γυαλιού.
+</skos:definition>
+<skos:definition xml:lang="en">
+Images or patterns composed of small, regularly shaped pieces of durable material, usually stone or colored glass.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300015342">
+<rdfs:label xml:lang="en">mosaics (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ψηφιδωτό</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Mosaic</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/metaforiko-meso">
+<skos:prefLabel xml:lang="en">Means of transport</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μεταφορικό μέσο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="en">Means of transport</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Μεταφορικά μέσα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Book-page">
+<skos:prefLabel xml:lang="en">Book page</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σελίδα βιβλίου</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1031643604"/>
+<skos:definition xml:lang="en">
+" One side of a leaf (or sheet) of paper, parchment or other material (or electronic media) in a book, on which text or illustrations can be printed, written or drawn, to create documents."
+</skos:definition>
+<skos:definition xml:lang="el">
+Μία πλευρά ενός φύλλου χαρτιού, περγαμηνής ή άλλου υλικού (ή ηλεκτρονικών μέσων) σε ένα βιβλίο, πάνω στο οποίο μπορούν να εκτυπωθούν, να γραφτούν ή να συνταχθούν κείμενο ή εικονογραφήσεις για τη δημιουργία εγγράφων.
+</skos:definition>
+<skos:broadMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Page_(paper)">
+<rdfs:label xml:lang="en">Page (paper)</rdfs:label>
+</rdf:Description>
+</skos:broadMatch>
+<skos:broadMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300194222">
+<rdfs:label xml:lang="en">pages (components)</rdfs:label>
+</rdf:Description>
+</skos:broadMatch>
+<ekt:prefLabelInPlural xml:lang="en">Book pages</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Σελίδες βιβλίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Newspaper-front-page">
+<skos:prefLabel xml:lang="en">Headline</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Πρωτοσέλιδο εφημερίδας</skos:prefLabel>
+<skos:altLabel xml:lang="en">Newspaper headline</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Newspaper-part"/>
+<skos:definition xml:lang="el">Η πρώτη και αρχικά ορατή σελίδα μιας εφημερίδας.</skos:definition>
+<skos:definition xml:lang="en">
+The first, and initially visible, page of a newspaper.
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="el">Πρωτοσέλιδα εφημερίδας</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Newspaper headlines</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/sxedioskitso">
+<skos:prefLabel xml:lang="el">Σχέδιο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Drawing</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Sketch"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/diagramma251"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/texniko-sxedio"/>
+<skos:definition xml:lang="en">
+Visual works produced by drawing, which is the application of lines on a surface, often paper, by using a pencil, pen, chalk, or some other tracing instrument to focus on the delineation of form rather than the application of color. This term is often defined broadly to refer to computer-generated images as well.
+</skos:definition>
+<skos:definition xml:lang="el">
+Τα οπτικά έργα που παράγονται με την τεχνική τουσχεδίου, που είναι η εφαρμογή γραμμών σε μια επιφάνεια, συχνά χαρτί, χρησιμοποιώντας ένα μολύβι, στυλό, κιμωλία ή κάποιο άλλο εργαλείο που εστιάζει στην οριοθέτηση της φόρμας και όχι στην εφαρμογή του χρώματος. Αυτός ο όρος συχνά αναφέρεται και σε εικόνες που παράγονται από υπολογιστή.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300033973">
+<rdfs:label xml:lang="en">drawings (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Drawings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Σχέδια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/190704419">
+<skos:prefLabel xml:lang="el">Πίνακας</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Table</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027364">
+<rdfs:label xml:lang="en">tables (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Πίνακες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Tables</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Theatrical-program">
+<skos:prefLabel xml:lang="el">Πρόγραμμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Program</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:definition xml:lang="en">
+Brief outlines or explanations of the order to be pursued, criteria for participation, or the subjects embraced in a given event or endeavor. Includes lists of the features composing a dramatic or other performance, with the names of participants.
+</skos:definition>
+<skos:definition xml:lang="el">
+Τυπωμένες ή γραπτές λίστες των πράξεων, σκηνών, επιλογών ή άλλων χαρακτηριστικών που συνθέτουν μια παράσταση, συμπεριλαμβανομένων των ονομάτων των συμμετεχόντων.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027240">
+<rdfs:label xml:lang="en">programs (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Programs</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Προγράμματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/optikh-probolhparoysiash">
+<skos:prefLabel xml:lang="en">Visual projection/Presentation</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Οπτική προβολή/Παρουσίαση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<ekt:prefLabelInPlural xml:lang="en">Visual projections/Presentations</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Οπτικές προβολές/Παρουσιάσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy200">
+<skos:prefLabel xml:lang="en">Conference item</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τεκμήριο συνεδρίου</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<ekt:prefLabelInPlural xml:lang="en">Conference items</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Τεκμήρια συνεδρίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/leksiko">
+<skos:prefLabel xml:lang="el">Λεξικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Dictionary</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/biblio"/>
+<skos:definition xml:lang="en">
+"Reference sources containing alphabetical lists of words with information given for each word; generally including meanings, pronunciation, etymology, and often usage guidance. "
+</skos:definition>
+<skos:definition xml:lang="el">
+Πηγές αναφοράς που συστηματικά συγκεντρώνουν και ταξινομούν τις λέξεις σε αλφαβητική ή άλλη σειρά, παρέχοντας για την κάθε μία ποικίλες πληροφορίες (γραμματικές, συντακτικές, ερμηνευτικές, ετυμολογικές, αποδόσεις σε άλλη γλώσσα κλπ)
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026186">
+<rdfs:label xml:lang="en">dictionaries</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Λεξικά</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Dictionaries</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/2140143048">
+<skos:prefLabel xml:lang="el">Πιστοποιητικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Certificate</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1994723278"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/55729028"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026841">
+<rdfs:label xml:lang="en">certificates</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Certificates</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Πιστοποιητικά</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1866099504">
+<skos:prefLabel xml:lang="el">Φάκελος εγγράφων</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Document file</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026942">
+<rdfs:label xml:lang="en">files (document groupings)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Φάκελοι εγγράφων</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Document files</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Serial-publication">
+<skos:prefLabel xml:lang="en">Serial publication</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Περιοδική έκδοση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/efhmerida"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Periodical"/>
+<skos:definition xml:lang="en">
+Publications in any medium issued in successive parts bearing numerical or chronological designations and intended to be continued indefinitely, such as periodicals, newspapers, annuals (reports, yearbooks, etc.), journals, memoires, proceedings, transactions, etc., of societies and numbered monographic series.
+</skos:definition>
+<skos:definition xml:lang="el">
+Δημοσιεύσεις σε οποιοδήποτε μέσο, οι οποίες εκδίδονται σε διαδοχικά τμήματα που φέρουν είτε αριθμητικές είτε χρονολογικές ονομασίες και προορίζονται να συνεχιστούν επ 'αόριστον. Χαρακτηριστικό παράδειγμα αποτελούν τα περιοδικά, οι εφημερίδες, τα ετήσια δελτία, κ.ά.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Serial_(publishing)">
+<rdfs:label xml:lang="en">Serial (publishing)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026642">
+<rdfs:label xml:lang="en">serials (publications)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Serial publications</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Περιοδικές εκδόσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Monograph-">
+<skos:prefLabel xml:lang="el">Μονογραφία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Monograph</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="en">
+Separate treatises on a particular subject, typically written expositions of a subject narrow enough in scope to exclude all but a single aspect of the subject, for example, a study of the works of a single artist
+</skos:definition>
+<skos:definition xml:lang="el">
+Πραγματεία για ένα συγκεκριμένο θέμα, αρκετά στενή ώστε να αποκλειστούν όλες οι πτυχές του εκτός από μία, για παράδειγμα, μια μελέτη των έργων ενός μόνο καλλιτέχνη
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Monograph">
+<rdfs:label xml:lang="en">Monograph</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300060417">
+<rdfs:label xml:lang="en">monographs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Μονογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Monographs</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/montelo230">
+<skos:prefLabel xml:lang="el">Μοντέλο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Model</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/proplasma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/maketa"/>
+<ekt:prefLabelInPlural xml:lang="el">Μοντέλα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Models</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/xeirografo">
+<skos:prefLabel xml:lang="el">Χειρόγραφο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Manuscript</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028569">
+<rdfs:label xml:lang="en">manuscripts (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Manuscripts</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Χειρόγραφα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/antigrafo">
+<skos:prefLabel xml:lang="el">Αντίγραφο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Replica</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300015642">
+<rdfs:label xml:lang="en">replicas</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Replica (3D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Αντίγραφο (τρισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Αντίγραφα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Replicas</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/504763427">
+<skos:prefLabel xml:lang="el">Έργο τέχνης μεικτής τεχνικής</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Mixed media work of art</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="en">Visual works created using multiple media.</skos:definition>
+<skos:definition xml:lang="el">Έργα που δημιουργήθηκαν με χρήση πολλαπλών μέσων.</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404586">
+<rdfs:label xml:lang="en">mixed media works</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Mixed media work of art (2D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Έργο τέχνης μεικτής τεχνικής (δισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Mixed media works of art</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έργα τέχνης μεικτής τεχνικής</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/hxografhseis">
+<skos:prefLabel xml:lang="el">Ηχογράφηση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Sound recording</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ekthesh-dihghsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/moysiko-kommati"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Event"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh162"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/synenteyksh167"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy168"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/289335872"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1753481152"/>
+<skos:definition xml:lang="en">
+Sound recorded on discs, tapes, filaments, or other media
+</skos:definition>
+<skos:definition xml:lang="el">Εγγραφή ήχου σε δίσκους, ταινίες ή άλλα μέσα</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028633">
+<rdfs:label xml:lang="en">sound recordings</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Sound recordings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ηχογραφήσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/biomhxanikh-paragwgh">
+<skos:prefLabel xml:lang="en">Industrial item</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Βιομηχανικό αντικείμενο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<ekt:prefLabelInPlural xml:lang="el">Βιομηχανικά αντικείμενα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Industrial items</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/mythistoriografia">
+<skos:prefLabel xml:lang="en">Fiction novel</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μυθιστόρημα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="el">
+Είδος που περιλαμβάνει λογοτεχνικά έργα που πηγάζουν από τη φαντασία του δημιουργού και δεν αναγνωρίζονται ως πραγματικά γεγονότα.
+</skos:definition>
+<skos:definition xml:lang="en">
+Genre that refers to works evoked from the imagination of the creator and not conferred as fact.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055918">
+<rdfs:label xml:lang="en">fiction (general genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Μυθιστορήματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Fiction novels</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/efhmera">
+<skos:prefLabel xml:lang="en">Ephemera</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Εφήμερα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="el">
+Υλικό της καθημερινής ζωής που παρήχθη σε μεγάλες ποσότητες και από ευτελείς πρώτες ύλες για να εξυπηρετήσει συγκεκριμένες και πρόσκαιρες ανάγκες και δεν προορίζεται για να διατηρηθεί. Στην κατηγορία εφήμερα ανήκουν τα ψηφοδέλτια, τα προγράμματα εκδηλώσεων, οι αφίσες, οι συσκευασίες τροφίμων, ετικέτες, τα εισιτήρια, οι έντυπες αγγελίες κ.ά.
+</skos:definition>
+<skos:definition xml:lang="en">
+Printed works that are created to meet an array of immediate needs, usually transitory in nature not intended to be saved. Examples could be posters, leaflets, programs, postcards, tradecards, labels, tickets, handbills, sale notices, and valentines.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300264821">
+<rdfs:label xml:lang="en">printed ephemera</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/574933493">
+<skos:prefLabel xml:lang="en">Journal part</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τμήμα περιοδικού</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1714536128"/>
+<ekt:prefLabelInPlural xml:lang="el">Τμήματα περιοδικού</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Journal parts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Periodical">
+<skos:prefLabel xml:lang="el">Περιοδικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Periodical</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Serial-publication"/>
+<skos:definition xml:lang="en">
+Publications issued at regular intervals, but not daily, containing articles on various subjects by different authors for the general reader.
+</skos:definition>
+<skos:definition xml:lang="el">
+Δημοσιεύσεις που εκδίδονται σε τακτά χρονικά διαστήματα - αλλά όχι καθημερινά και που στοχεύουν στην πληροφόρηση ή ψυχαγωγία του ευρύτερου αναγνωστικού κοινού. Περιέχουν άρθρα διαφορετικών συγγραφέων πάνω σε διάφορα θέματα, ενώ διακρίνονται σε κατηγορίες ανάλογα με την κυκλοφορία τους (εβδομαδιαία, μηνιαία κλπ.) και τη θεματολογία τους (Περιοδικά Ποικίλης Ύλης, Οικονομικά Περιοδικά, Περιοδικά Ιστορίας, Περιοδικά Μόδας, Περιοδικά υγείας, Αθλητικά Περιοδικά, κ.ά.) Επίσης, πέραν των παραδοσιακών έντυπων περιοδικών υπάρχουν και τα ηλεκτρονικά Περιοδικά, που δραστηριοποιούνται στο διαδίκτυο.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026657">
+<rdfs:label xml:lang="en">periodicals</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Περιοδικά</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Periodicals</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/52288512">
+<skos:prefLabel xml:lang="el">Διαφημιστικό σποτ</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Commercial spot</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:closeMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300213187">
+<rdfs:label xml:lang="en">commercials (oral or performed works)</rdfs:label>
+</rdf:Description>
+</skos:closeMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q11997526">
+<rdfs:label xml:lang="en">video advertisement</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Commercial spots</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Διαφημιστικά σποτ</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh162">
+<skos:prefLabel xml:lang="en">Speech, Lecture</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λόγος, Διαλέξη</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:definition xml:lang="el">
+Απευθύνσεις ή ομιλίες που έχουν περισσότερο ή λιγότερο επίσημο χαρακτήρα και συντάχθηκαν με σκοπό να εκφωνηθούν σε ακροατήριο ή συνέλευση.
+</skos:definition>
+<skos:definition xml:lang="en">
+Addresses or discourses having a more or less formal character and composed for the purpose of delivering the content orally to an audience or assembly.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300417595">
+<rdfs:label xml:lang="en">speeches (compositions)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Λόγος, Διαλέξη (ηχογράφηση)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Speech, Lecture (recording)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Speeches, lectures</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Λόγοι, διαλέξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1764999771">
+<skos:prefLabel xml:lang="el">Εγκατάσταση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Installation</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300047896">
+<rdfs:label xml:lang="en">installations (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Εγκαταστάσεις</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Installations</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Tradition">
+<skos:prefLabel xml:lang="el">Λαϊκή Παράδοση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Folk Legend</skos:prefLabel>
+<skos:altLabel xml:lang="en">Folk Tradition</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Intangible-cultural-heritage"/>
+<skos:definition xml:lang="el">
+Ιστορίες προερχόμενες από την παράδοση παλαιότερων εποχών, που συνήθως αφορούσαν ένα πραγματικό πρόσωπο, τόπο ή γεγονός. Επί το πλείστον αντιμετωπίζονταν ως ιστορικά τεκμήρια, τα οποία ωστόσο δεν ήταν πλήρως επαληθεύσιμα.
+</skos:definition>
+<skos:definition xml:lang="en">
+Stories handed down by tradition from earlier times, usually concerned with a real person, place, or event, and popularly regarded as historical although not entirely verifiable.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055923">
+<rdfs:label xml:lang="en">legends (literary genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Λαϊκές Παραδόσεις</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Folk Legends</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Folk Traditions</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/press-release">
+<skos:prefLabel xml:lang="el">Δελτίο τύπου</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Press release</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/anakoinwsh"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026437">
+<rdfs:label xml:lang="en">press releases</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Press releases</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Δελτία τύπου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis">
+<skos:prefLabel xml:lang="en">Video</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Βίντεο</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Interview"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/393843232"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh195"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy200"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/magnhtoskophsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/416998368"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/702610912"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/955053632"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/52288512"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/thrhskeytiko-keimeno">
+<skos:prefLabel xml:lang="en">Religious text</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Θρησκευτικό κείμενο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Γλωσσικό υλικό που περιέχει θρησκευτικά, λειτουργικά ή ιερά κείμενα ή/και μουσική (π.χ. ιστορίες από τη Βίβλο, κατηχήσεις, θρησκευτικά μυθιστορήματα, ύμνους, συγχωροχάρτια, λιτανείες, θρησκευτικά έργα, κηρύγματα, τα βιβλία των λειτουργιών, συνόψεις κλπ.).
+</skos:definition>
+<skos:definition xml:lang="en">
+General term for texts of religion, sacred beliefs, or related to religious beliefs and practices.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300220519">
+<rdfs:label xml:lang="en">religious texts</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Θρησκευτικά κείμενα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Religious texts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/289335872">
+<skos:prefLabel xml:lang="en">Spoken word</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Απαγγελία</skos:prefLabel>
+<skos:altLabel xml:lang="en">Recitation</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<skos:closeMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300417619">
+<rdfs:label xml:lang="en">spoken word</rdfs:label>
+</rdf:Description>
+</skos:closeMatch>
+<ekt:prefLabelInPlural xml:lang="en">Spoken word</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Απαγγελίες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/naos-">
+<skos:prefLabel xml:lang="el">Ναός</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Temple</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ktirio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300007595">
+<rdfs:label xml:lang="en">temples (buildings)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ναοί</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Temples</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1031643604">
+<skos:prefLabel xml:lang="el">Σελίδα τίτλου</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Title page</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Book-page"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055033">
+<rdfs:label xml:lang="en">title pages</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs">
+<skos:prefLabel xml:lang="el">Τρισδιάστατα Αντικείμενα και Έργα Τέχνης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">3D Αrtefacts and Realia</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/nomisma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Prize"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/anamnhstiko-antikeimeno-soybenir"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Master"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/antigrafo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/yfasma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/korniza"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/glypto"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/arxaiologiko-eyrhma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/sfragida"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/keramiko-antikeimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/epigrafh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/diskio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/osto"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ktirio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/maska"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/endyma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/arxaiologikos-xwros"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergo-thrhskeytikhs-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/metallio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/anaglyfo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/fysika-deigmata"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1764999771"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/-Identifying-marking--"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1163199344"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/figoyra-theatroy-skiwn"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Album"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/kosmhma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/962194336"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1432661696"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/pinakida"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/metaforiko-meso"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1875353198"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/montelo230"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/skeyos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/arxitektoniko-melos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/oikopaignio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/thraysma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Lamella"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/personal-accessories"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1302734976"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/539606720"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/allhlografia">
+<skos:prefLabel xml:lang="en">Letter</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Επιστολή</skos:prefLabel>
+<skos:altLabel xml:lang="el">Αλληλογραφία</skos:altLabel>
+<skos:altLabel xml:lang="en">Correspondence</skos:altLabel>
+<skos:altLabel xml:lang="el">Επιστολογραφία</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:definition xml:lang="el">
+Γραπτό μήνημα που απευθύνεται σε κάποιον για θέμα κοινού ενδιαφέροντος
+</skos:definition>
+<skos:definition xml:lang="en">
+A letter is one person's written message to another pertaining to some matter of common concern
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026879">
+<rdfs:label xml:lang="en">letters (correspondence)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Letter_(message)">
+<rdfs:label xml:lang="en">Letter (message)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Letters</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Επιστολές</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/synenteyksh">
+<skos:prefLabel xml:lang="el">Συνέντευξη</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Interview</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Δηλώσεις, μεταγραφές ή καταγραφές συζητήσεων, στις οποίες ένα άτομο λαμβάνει πληροφορίες από ένα άλλο, είτε για ερευνητικούς σκοπούς, είτε για δημοσίευση, μετάδοση, ή άλλους λόγους.
+</skos:definition>
+<skos:definition xml:lang="en">
+"Statements, transcripts, or recordings of conversations in which one person obtains information from another such as for research purposes, publication, or broadcast. "
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026392">
+<rdfs:label xml:lang="en">interviews</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Interview">
+<rdfs:label xml:lang="en">Interview</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Συνέντευξη (κείμενο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Interview (text)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Interviews</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Συνεντεύξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/prwtotypo">
+<skos:prefLabel xml:lang="el">Πρωτότυπο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Master</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="el">
+Ένα κατασκευασμένο αντικείμενο που χρησιμεύει ως μοντέλο εργασίας για την παραγωγή των επόμενων αντιγράφων (μήτρα, εκμαγείο κλπ)
+</skos:definition>
+<skos:definition xml:lang="en">
+A manufactured object that serves as the working model for the production of subsequent copies.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300166391">
+<rdfs:label xml:lang="en">prototypes (object genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Πρωτότυπο (δισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Master (2D)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Masters</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Πρωτότυπα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/2078851744">
+<skos:prefLabel xml:lang="el">Ηχογράφηση θεατρικής παράστασης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Theater play recording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/1753481152"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q109349450">
+<rdfs:label xml:lang="el">audio drama</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ηχογραφήσεις θεατρικής παράστασης</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Theater play recordings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/962194336">
+<skos:prefLabel xml:lang="en">Tile</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Πλακίδιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300379948">
+<rdfs:label xml:lang="en">tiles (object genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Πλακίδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Tiles</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh">
+<skos:prefLabel xml:lang="en">Speech, Lecture</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λόγος, Διαλέξη</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Το κείμενο μιας διάλεξης. Ως διαλέξεις νοούνται οι εκθέσεις ενός συγκεκριμένου θέματος που παραδίδονται ενώπιον ενός ακροατηρίου ή μιας τάξης, ειδικά για σκοπούς διδασκαλίας
+</skos:definition>
+<skos:definition xml:lang="en">
+Expositions of a given subject delivered before an audience or class, especially for the purposes of instruction
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026673">
+<rdfs:label xml:lang="en">lectures (text)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Λόγος, Διαλέξη (κείμενο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Speech, Lecture (text)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Speeches, lectures</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Λόγοι, διαλέξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/diafhmistiko">
+<skos:prefLabel xml:lang="el">Διαφημιστικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Advertisement</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Δημόσιες ή πληρωμένες ανακοινώσεις, (ειδικά εκείνες που έχουν εκτυπωθεί) που προωθούν ένα προϊόν, μια υπηρεσία ή ένα σκοπό.
+</skos:definition>
+<skos:definition xml:lang="en">
+Public notices or paid announcements (especially those in print) that promote or sell a product, service or idea.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300193993">
+<rdfs:label xml:lang="en">advertisements</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Advertisements</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Διαφημιστικά</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/meleth">
+<skos:prefLabel xml:lang="el">Μελέτη</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Study</skos:prefLabel>
+<skos:altLabel xml:lang="en">Research</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/statistikh"/>
+<skos:definition xml:lang="en">
+Detailed investigation and analysis of a subject or a situation
+</skos:definition>
+<skos:definition xml:lang="el">
+Λεπτομερής έρευνα και ανάλυση ενός θέματος ή μιας συνθήκης
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300254807">
+<rdfs:label xml:lang="en">research (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Studies</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Μελέτες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh195">
+<skos:prefLabel xml:lang="en">Speech, Lecture</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λόγος, Διαλέξη</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<ekt:distinctPrefLabel xml:lang="en">Speech, Lecture (videorecording)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Λόγος, Διαλέξη (μαγνητοσκόπηση)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Speeches, lectures</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Λόγοι, διαλέξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/thraysma">
+<skos:prefLabel xml:lang="el">Θραύσμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Fragment</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ostrako"/>
+<ekt:prefLabelInPlural xml:lang="en">Fragments</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Θραύσματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/eidwlio">
+<skos:prefLabel xml:lang="en">Figurine</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Ειδώλιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/glypto"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300047455">
+<rdfs:label xml:lang="en">figurines</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Figurines</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ειδώλια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/393843232">
+<skos:prefLabel xml:lang="en">Oral history</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Προφορική ιστορία</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300202595">
+<rdfs:label xml:lang="el">oral histories (literary genre)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Oral histories</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Προφορικές ιστορίες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/416998368">
+<skos:prefLabel xml:lang="el">Βιντεοσκόπηση παράστασης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Performance videorecording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/87513344"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/403137696"/>
+<ekt:prefLabelInPlural xml:lang="el">Βιντεοσκoπήσεις παραστάσεων</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Performance videorecordings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/yfasma">
+<skos:prefLabel xml:lang="el">Ύφασμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Textile</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="en">Textiles</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Υφάσματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Script-and-type-forms">
+<skos:prefLabel xml:lang="el">Τυπογραφικά στοιχεία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Script and type forms</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Partial-document"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300201263">
+<rdfs:label xml:lang="en">script and type forms</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy">
+<skos:prefLabel xml:lang="en">Conference item</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τεκμήριο συνεδρίου</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<ekt:prefLabelInPlural xml:lang="en">Conference items</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Τεκμήρια συνεδρίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/fwtografia">
+<skos:prefLabel xml:lang="el">Φωτογραφία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Photo</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtografikh-diafaneia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtoarnhtika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/646070304"/>
+<skos:definition xml:lang="en">
+Still images produced from radiation-sensitive materials (sensitive to light, electron beams, or nuclear radiation), generally by means of the chemical action of light on a sensitive film, paper, glass, or metal. Photographs may be positive or negative, opaque or transparent.
+</skos:definition>
+<skos:definition xml:lang="el">
+Ακίνητες εικόνες που παράγονται από ευαίσθητα στην ακτινοβολία υλικά (ευαίσθητα στο φως, δέσμες ηλεκτρονίων ή πυρηνική ακτινοβολία), γενικά μέσω της χημικής δράσης του φωτός σε ευαίσθητο φιλμ, χαρτί, γυαλί ή μέταλλο. Οι φωτογραφίες μπορεί να είναι θετικές ή αρνητικές, αδιαφανείς ή διαφανείς
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300046300">
+<rdfs:label xml:lang="en">photographs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Photographs</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Φωτογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Photos</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/banknote">
+<skos:prefLabel xml:lang="el">Χαρτονόμισμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Banknote</skos:prefLabel>
+<skos:altLabel xml:lang="el">Τραπεζογραμμάτιο</skos:altLabel>
+<skos:altLabel xml:lang="en">banknote</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:definition xml:lang="el">
+Εγκριθέντα από την κυβέρνηση μέσα συναλλαγής τυπωμένα σε χαρτί
+</skos:definition>
+<skos:definition xml:lang="en">
+Officially circulating media of exchange manufactured from paper
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300191324">
+<rdfs:label xml:lang="en">paper money</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Χαρτονομίσματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Banknotes</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1435790784">
+<skos:prefLabel xml:lang="el">Τηλεφωνική συσκευή</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Telephone</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/mhxanhma"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300249768">
+<rdfs:label xml:lang="en">telephones</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Telephones</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Τηλεφωνικές συσκευές</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/955053632">
+<skos:prefLabel xml:lang="el">Τρέιλερ ταινίας/παράστασης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Movie/Performance Trailer</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:closeMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300263866">
+<rdfs:label xml:lang="en">trailers (motion pictures)</rdfs:label>
+</rdf:Description>
+</skos:closeMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τρέιλερ ταινιών/παραστάσεων</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Movie/Performance Trailers</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/xartografiko-yliko">
+<skos:prefLabel xml:lang="el">Χαρτογραφικό Υλικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Cartographic Material</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/xarths"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028052">
+<rdfs:label xml:lang="en">cartographic materials</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1194717724">
+<skos:prefLabel xml:lang="en">Tombstone</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Επιτύμβια πλάκα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/anaglyfo"/>
+<ekt:prefLabelInPlural xml:lang="el">Επιτύμβιες πλάκες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Tombstones</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/texniko-sxedio">
+<skos:prefLabel xml:lang="el">Τεχνικό σχέδιο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Technical drawing</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/sxedioskitso"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/arxitektoniko-sxedio"/>
+<skos:definition xml:lang="el">
+Η ευρεία κατηγορία σχεδίων που προορίζονται για κατασκευαστικούς, μηχανικούς ή χαρτογραφικούς σκοπούς και που ακολουθούν ακριβείς συμβάσεις κλίμακας και προβολής, συμπεριλαμβανομένων διατομών, λεπτομερειών, διαγραμμάτων, ανυψώσεων, προοπτικών, σχεδίων κ.λπ
+</skos:definition>
+<skos:definition xml:lang="en">
+The broad class of drawings that are intended for constructional, mechanical, or mapping purposes and that follow precise conventions of scale and projection, including cross-sections, details, diagrams, elevations, perspectives, plans, etc., made for use in a technical context
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300034789">
+<rdfs:label xml:lang="en">technical drawings</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τεχνικά σχέδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Technical drawings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/160769568">
+<skos:prefLabel xml:lang="en">3D representation</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τρισδιάστατη αναπαράσταση</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/474726432"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/46195552"/>
+<ekt:prefLabelInPlural xml:lang="en">3D representations</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Τρισδιάστατες αναπαραστάσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/metallio">
+<skos:prefLabel xml:lang="en">Medal</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μετάλλιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="el">Μετάλλια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Medals</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/452063584">
+<skos:prefLabel xml:lang="el">Κώδικας</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Codex</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/biblio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300224200">
+<rdfs:label xml:lang="en">codices (bound manuscripts)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Κώδικες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Codices</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/132867776">
+<skos:prefLabel xml:lang="el">Λιμπρέτο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Libretto</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:exactMatch rdf:resource="https://vocab.getty.edu/aat/300026424"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/keimeno">
+<skos:prefLabel xml:lang="en">Text</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κείμενο</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Serial-publication"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1866099504"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1546658699"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/katalogos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/xeirografo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/anakoinwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ekdhlwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/apokomma"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/arthro"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/hmerologioshmeiwmatario"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/biblio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/thrhskeytiko-keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/egxeiridio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/diatribh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/logos-dialeksh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/fylladia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/190704419"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/eyrethrio"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/diafhmistiko"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/meleth"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/synenteyksh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/optikh-probolhparoysiash"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/749582464"/>
+<skos:definition xml:lang="el">
+Γραπτές ή τυπωμένες λέξεις, φράσεις ή προτάσεις που χρησιμοποιούνται για την επικοινωνία. Σε αυτές περιλαμβάνονται οι προφορικές ανακοινώσεις που συντάσσονται γραπτώς ή εκτυπώνονται.
+</skos:definition>
+<skos:definition xml:lang="en">
+Written or printed words, phrases, or sentences arranged to make a communication. Includes oral verbal communications set down in writing or print.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300263751">
+<rdfs:label xml:lang="en">texts (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Texts</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Κείμενα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/magnhtoskophsh">
+<skos:prefLabel xml:lang="el">Μαγνητοσκόπηση</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Videorecording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<ekt:prefLabelInPlural xml:lang="en">Video recordings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Βιντεοσκοπήσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Cultural-event">
+<skos:prefLabel xml:lang="en">Cultural event</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Πολιτιστική Εκδήλωση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:definition xml:lang="el">
+Δραστηριότητες, είτε παραδοσιακές είτε τελετουργικές που σχετίζονται με μια συγκεκριμένη κουλτούρα.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300417518">
+<rdfs:label xml:lang="en">cultural events</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Πολιτιστικές Εκδηλώσεις</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Cultural events</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/702610912">
+<skos:prefLabel xml:lang="en">Documentary</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Ντοκιμαντέρ</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300375156">
+<rdfs:label xml:lang="en">documentary film</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Interview">
+<skos:prefLabel xml:lang="el">Συνέντευξη</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Interview</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/yliko-probolhs-kai-binteoskophseis"/>
+<ekt:distinctPrefLabel xml:lang="en">Interview (video)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Συνέντευξη (μαγνητοσκόπηση)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Intervieww</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Συνεντεύξεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1963796544">
+<skos:prefLabel xml:lang="en">Lyrics</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Στίχοι τραγουδιού</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://id.loc.gov/authorities/subjects/sh85125043">
+<rdfs:label xml:lang="en">Songs-Texts</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/skeyos">
+<skos:prefLabel xml:lang="en">Vessel</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σκεύος</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/aggeio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300193015">
+<rdfs:label xml:lang="en">vessels (containers)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σκεύη</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Vessels</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1831873263">
+<skos:prefLabel xml:lang="el">Εξώφυλλο δίσκου</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Record cover</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300247936">
+<rdfs:label xml:lang="en">record covers</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Εξώφυλλα δίσκου</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Record covers</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/539606720">
+<skos:prefLabel xml:lang="el">Φαγητό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Food</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300254496">
+<rdfs:label xml:lang="en">food</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/959604608">
+<skos:prefLabel xml:lang="el">Μακέτα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Scale model</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300266034">
+<rdfs:label xml:lang="en">scale models</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Scale model (2D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Μακέτα (2D)</ekt:distinctPrefLabel>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/2057870176">
+<skos:prefLabel xml:lang="en">Lighthouse</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φάρος</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ktirio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300007741">
+<rdfs:label xml:lang="en">lighthouses</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Lighthouses</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Φάροι</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/eyxethria-karta">
+<skos:prefLabel xml:lang="el">Ευχετήρια κάρτα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Greeting card</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<skos:definition xml:lang="el">
+Κάρτα που αποστέλλεται ή δίνεται σε ειδικές περιπτώσεις. Συνήθως φέρει ευχές.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026778">
+<rdfs:label xml:lang="en">greeting cards</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ευχετήριες κάρτες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Greeting cards</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1890717632">
+<skos:prefLabel xml:lang="el">Ηχογράφηση συναυλίας</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Concert recording</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/1753481152"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="https://www.wikidata.org/wiki/Q56123235">
+<rdfs:label xml:lang="en">live recording</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Concert recordings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ηχογραφήσεις συναυλιών</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Master">
+<skos:prefLabel xml:lang="el">Πρωτότυπο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Master</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:distinctPrefLabel xml:lang="el">Πρωτότυπο (τρισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Master (3D)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Masters</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Πρωτότυπα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/arxaiologiko-eyrhma">
+<skos:prefLabel xml:lang="en">Archaeological object</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αρχαιολογικό αντικείμενο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300234110">
+<rdfs:label xml:lang="en">archaeological objects</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Αρχαιολογικά αντικείμενα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Archaeological objects</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/synola-dedomenwn">
+<skos:prefLabel xml:lang="el">Σύνολα δεδομένων</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Datasets</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/synolo-dedomenwn"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/synolo-dedomenwn">
+<skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σύνολο δεδομένων</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/synola-dedomenwn"/>
+<skos:definition xml:lang="el">
+Περιεχόμενο που εκφράζεται μέσα από ένα ψηφιακά κωδικοποιημένο σύνολο δεδομένων προορισμένο για επεξεργασία από υπολογιστή. Περιλαμβάνει αριθμητικά δεδομένα, περιβαλλοντικά δεδομένα, κλπ., που χρησιμοποιούνται από εφαρμογές λογισμικού για τον υπολογισμό μέσων όρων, συσχετίσεων, κ.α., ή για την παραγωγή μοντέλων, αλλά συνήθως δεν παρουσιάζονται σε ακατέργαστη μορφή. Για δεδομένα που παρουσιάζονται στη μορφή παρτιτούρων, εικόνων, κειμένου, τρισδιάστατων αντικειμένων ή ηχογραφήσεων βλ. αντίστοιχο τύπο περιεχομένου.
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="el">Σύνολα δεδομένων</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Datasets</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Religious-visual-works">
+<skos:prefLabel xml:lang="en">Religious visual works</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έργο θρησκευτικής τέχνης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/agiografia"/>
+<skos:definition xml:lang="el">
+Έργα τέχνης που δημιουργούνται ή χρησιμοποιούνται μέσα σε θρησκευτικά πλαίσια.
+</skos:definition>
+<skos:definition xml:lang="en">
+Visually-based works of art created or used within religious contexts.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300234093">
+<rdfs:label xml:lang="en">religious visual works</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Religious visual works (2D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Έργο θρησκευτικής τέχνης (δισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Religious visual works (2D)</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έργα θρησκευτικής τέχνης (δισδιάστατα)</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/arthro">
+<skos:prefLabel xml:lang="en">Article</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Άρθρο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Οι λογοτεχνικές συνθέσεις που προορίζονται για δημοσίευση ως ανεξάρτητο τμήμα ενός περιοδικού, εφημερίδας, εγκυκλοπαίδειας ή άλλης εργασίας.
+</skos:definition>
+<skos:definition xml:lang="en">
+Literary compositions prepared for publication as an independent portion of a magazine, newspaper, encyclopedia, or other work.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300048715">
+<rdfs:label xml:lang="en">articles</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Άρθρα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Articles</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/partitoyra">
+<skos:prefLabel xml:lang="en">Score</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Παρτιτούρα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/partitoyres"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026427">
+<rdfs:label xml:lang="en">scores (documents for music)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Παρτιτούρες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Music scores</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/maketa">
+<skos:prefLabel xml:lang="el">Μακέτα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Scale model</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/montelo230"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300266034">
+<rdfs:label xml:lang="en">scale models</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Scale model (3D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Μακέτα (3D)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Μακέτες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Scale models</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/nomikh-ypothesh-kai-shmeiwma">
+<skos:prefLabel xml:lang="en">Legal document</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Νομικό κείμενο</skos:prefLabel>
+<skos:altLabel xml:lang="el">Νομικό Έγγραφο</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:definition xml:lang="en">Documents having legal relevance in general.</skos:definition>
+<skos:definition xml:lang="el">Έγγραφα που έχουν γενικά νομική συνάφεια</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027590">
+<rdfs:label xml:lang="en">legal documents</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Νομικά κείμενα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Legal documents</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/646070304">
+<skos:prefLabel xml:lang="el">Στιγμιότυπο βίντεο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Video still</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtografia"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300134997">
+<rdfs:label xml:lang="el">film stills</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Video stills</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Στιγμιότυπα βίντεο</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/lithografia">
+<skos:prefLabel xml:lang="el">Λιθογραφία</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Lithography</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/xaraktiko-ergo"/>
+<skos:definition xml:lang="en">
+Prints made using the process of lithography, which is a planographic printing process in which a design is deposited on the stone or plate with a greasy substance which will accept ink.
+</skos:definition>
+<skos:definition xml:lang="el">
+Εκτυπώσεις που παράγονται με την τεχνική της λιθογραφίας κατά την οποία η σχεδιαστική αναπαράσταση τοποθετείται πάνω σε μεταλλικές ή πέτρινες πλάκες.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300041379">
+<rdfs:label xml:lang="en">lithographs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Λιθογραφίες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Lithographs</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1714536128">
+<skos:prefLabel xml:lang="el">Εξώφυλλο περιοδικού</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Journal cover</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/574933493"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1544210272">
+<skos:prefLabel xml:lang="el">Μουσικό άλμπουμ / Άλμπουμ ηχογράφησης</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Music album / Sound recording album</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300440467">
+<rdfs:label xml:lang="en">albums (sound recordings)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Μουσικό Άλμπουμ (παραγωγή)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Music Album (production)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Μουσικα Άλμπουμ</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Music Albums</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Heraldic-motif-">
+<skos:prefLabel xml:lang="el">Εραλδικό μνημείο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Heraldic motif</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/-Identifying-marking--"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300009815">
+<rdfs:label xml:lang="en">heraldic motifs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Heraldic motifs</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Εραλδικά μνημεία</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/749582464">
+<skos:prefLabel xml:lang="en">Folklore field card</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Λαογραφικό δελτίο</skos:prefLabel>
+<skos:altLabel xml:lang="en">Field notes</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Ένα λαογραφικό δελτίο είναι ένα ειδικό έντυπο ή χειρόγραφο φύλλο καταγραφής που χρησιμοποιούσαν οι λαογράφοι (ειδικά στην Ελλάδα από τον 19ο αιώνα μέχρι τα μέσα του 20ού) για να συλλέξουν συστηματικά στοιχεία προφορικής παράδοσης από έναν τόπο.
+</skos:definition>
+<skos:closeMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027201">
+<rdfs:label xml:lang="en">field notes</rdfs:label>
+</rdf:Description>
+</skos:closeMatch>
+<ekt:prefLabelInPlural xml:lang="en">Folklore field cards</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Λαογραφικά δελτία</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/figoyra-theatroy-skiwn">
+<skos:prefLabel xml:lang="en">Shadow puppet</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φιγούρα θεάτρου σκιών</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<ekt:prefLabelInPlural xml:lang="en">Shadow puppets</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Φιγούρες θεάτρου σκιών</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Album">
+<skos:prefLabel xml:lang="el">Άλμπουμ/Λεύκωμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Album</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026690">
+<rdfs:label xml:lang="en">albums (books)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Albums</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Άλμπουμ/Λευκώματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/aytokollhth-etiketa">
+<skos:prefLabel xml:lang="en">Sticker</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αυτοκόλλητη ετικέτα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:definition xml:lang="el">
+Μια αυτοκόλλητη ετικέτα είναι ένα κομμάτι τυπωμένου χαρτιού, πλαστικού, βινυλίου, ή άλλου παρόμοιου λετπού υλικού, όπου η μία από τις δύο του όψεις διαθέτει κόλλα ευαίσθητη στην πίεση. Στο σύνολό τους, οι αυτοκόλλητες ετικέτες μπορούν να χρησιμοποιηθούν για διακόσμηση ή για λειτουργικούς σκοπούς, ανάλογα με την κατάσταση. Συνήθως φέρουν μηνύματα ή σχέδια.
+</skos:definition>
+<skos:definition xml:lang="en">
+Adhesive-backed slips of paper or similar thin material, usually bearing messages or designs.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300207379">
+<rdfs:label xml:lang="en">stickers</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Sticker">
+<rdfs:label xml:lang="en">Sticker</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Stickers</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αυτοκόλλητες ετικέτες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1432661696">
+<skos:prefLabel xml:lang="el">Ταφικό αντικείμενο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Funerary object</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300234126">
+<rdfs:label xml:lang="en">funerary objects</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ταφικά αντικείμενα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Funerary objects</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/efhmerida">
+<skos:prefLabel xml:lang="en">Newspaper issue</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φύλλο εφημερίδας</skos:prefLabel>
+<skos:altLabel xml:lang="el">Τεύχος εφημερίδας</skos:altLabel>
+<skos:altLabel xml:lang="el">Εφημερίδα</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Serial-publication"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026656">
+<rdfs:label xml:lang="en">newspapers</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Φύλλα εφημερίδας</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Newspaper issues</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Partial-document">
+<skos:prefLabel xml:lang="en">Partial document</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τμήμα έκδοσης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Newspaper-part"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Script-and-type-forms"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/partial-document"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/574933493"/>
+<skos:definition xml:lang="en">
+Portions of documents or other written works, either included as discrete sections in an extant document or detached from the original document.
+</skos:definition>
+<skos:definition xml:lang="el">
+Τμήματα εγγράφων ή άλλων γραπτών έργων, τα οποία είτε περιλαμβάνονται ως διακεκριμένοι τομείς σε ένα υπάρχον έγγραφο, είτε βρίσκονται αποσπασμένα από το πρωτότυπο (έγγραφο).
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055027">
+<rdfs:label xml:lang="en">partial documents</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τμήματα εκδόσεων</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Partial documents</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1003333568">
+<skos:prefLabel xml:lang="en">Bridge</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Γέφυρα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ktirio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300007836">
+<rdfs:label xml:lang="en">bridges (built works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Bridges</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Γέφυρες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Lamella">
+<skos:prefLabel xml:lang="en">Lamella</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έλασμα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300213348">
+<rdfs:label xml:lang="en">lamellae</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">lamellae</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Ελάσματα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/sfragisma">
+<skos:prefLabel xml:lang="en">Imprint</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Σφράγισμα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/-Identifying-marking--"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300262844">
+<rdfs:label xml:lang="en">stamps (marks)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σφραγίσματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Imprints</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1302734976">
+<skos:prefLabel xml:lang="el">Ξυλόγλυπτο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Woodcarving</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="https://vocab.getty.edu/aat/300449031">
+<rdfs:label xml:lang="en">woodcarvings (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ξυλόγλυπτα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Woodcarvings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/apokomma246">
+<skos:prefLabel xml:lang="el">Απόκομμα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Clipping</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:definition xml:lang="en">
+Illustrations, pages, articles, or columns of text removed from books, newspapers, journals, or other printed sources and kept for their informational content.
+</skos:definition>
+<skos:definition xml:lang="el">
+Εικονογραφήσεις, σελίδες, άρθρα ή στήλες κειμένου που έχουν αποκοπεί από βιβλία, εφημερίδες, περιοδικά ή άλλες έντυπες πηγές και διατηρούνται για το πληροφοριακό τους περιεχόμενο.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026867">
+<rdfs:label xml:lang="en">clippings (information artifacts)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="el">Απόκομμα (δισδιάστατο)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="en">Clipping (2D)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Αποκόμματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Clippings</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1687916414">
+<skos:prefLabel xml:lang="el">Φροντιστηριακό υλικό</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Props</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:definition xml:lang="el">
+Όλα τα κινητά αντικείμενα που χρησιμοποιούνται σε κινηματογραφική ταινία, τηλεόραση ή σετ σκηνικών που δεν είναι κοστούμι ή δομικά μέρος του σετ, όπως έπιπλα, διακοσμητικά αντικείμενα και αντικείμενα που κρατούνται από ηθοποιούς.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300263853">
+<rdfs:label xml:lang="en">props (object genres)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/151480982">
+<skos:prefLabel xml:lang="en">Card index</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Καρτέλα ευρετηρίου</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eyrethrio"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300048719">
+<rdfs:label xml:lang="en">card indexes</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Index cards</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Καρτέλες ευρετηρίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/21170400">
+<skos:prefLabel xml:lang="en">Dance performance</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Χορευτική παράσταση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300417581">
+<rdfs:label xml:lang="en">dance (discipline)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Dance performances</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Χορευτικές παραστάσεις</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/household-accessories">
+<skos:prefLabel xml:lang="en">Household accessories</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Οικιακός εξοπλισμός</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ergaleia-kai-eksoplismos"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/epiplwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Needlework"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300404584">
+<rdfs:label xml:lang="en">household accessories</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/ekdhlwsh">
+<skos:prefLabel xml:lang="en">Event item</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τεκμήριο εκδήλωσης</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<ekt:prefLabelInPlural xml:lang="el">Τεκμήρια εκδήλωσης</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Event items</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/800014889">
+<skos:prefLabel xml:lang="el">Τηλεγράφημα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Telegram</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/eggrafo"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026909">
+<rdfs:label xml:lang="en">telegrams</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τηλεγραφήματα</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Telegrams</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/partitoyres">
+<skos:prefLabel xml:lang="el">Παρτιτούρες</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Scores</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/partitoyra"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika">
+<skos:prefLabel xml:lang="el">Δισδιάστατα γραφικά</skos:prefLabel>
+<skos:prefLabel xml:lang="en">2D Graphics</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Replica"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/zwgrafikh"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/kolaz"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/504763427"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/fwtografia"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/pshfidwto"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/prwtotypo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Images-and-ornament-for-layout-features"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/sxedioskitso"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Religious-visual-works"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/xaraktiko-ergo"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/efhmera"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/959604608"/>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/-Illustration-layout-features">
+<skos:prefLabel xml:lang="en">Illustration (layout features)</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Εικονογράφηση</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Images-and-ornament-for-layout-features"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300015578">
+<rdfs:label xml:lang="en">illustrations (layout features)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Εικονογραφήσεις</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Illustrations</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/hmerologioshmeiwmatario">
+<skos:prefLabel xml:lang="el">Ημερολόγιο/Σημειωματάριο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Diary/Notebook</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:definition xml:lang="el">
+Bιβλία που περιέχουν τους καθημερινούς, προσωπικούς απολογισμούς των εμπειριών, των διαθέσεων και των παρατηρήσεων του συγγραφέα
+</skos:definition>
+<skos:definition xml:lang="en">
+Books containing the daily, personal accounts of the writer's own experiences, attitudes, and observations.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027112">
+<rdfs:label xml:lang="en">diaries</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Ημερολόγια/ Σημειωματάρια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Diaries/ Notebooks</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/-Identifying-marking--">
+<skos:prefLabel xml:lang="el">Σήμα (σύμβολο)</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Identifying marking</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Heraldic-motif-"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/sfragisma"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300055878">
+<rdfs:label xml:lang="en">symbols</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Identifying marking (3D)</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Σήμα (σύμβολο) (3D)</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="en">Identifying markings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Σύμβολα</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/Leaflet">
+<skos:prefLabel xml:lang="en">Leaflet</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Φυλλάδιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300211825">
+<rdfs:label xml:lang="en">leaflets (printed works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:distinctPrefLabel xml:lang="en">Leaflet</ekt:distinctPrefLabel>
+<ekt:distinctPrefLabel xml:lang="el">Φυλλάδιο</ekt:distinctPrefLabel>
+<ekt:prefLabelInPlural xml:lang="el">Φυλλάδια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Leaflets</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/dokimio">
+<skos:prefLabel xml:lang="el">Δοκίμιο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Essay</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="el">
+Πεζό κείμενο περιορισμένης συνήθως εκτάσεως, που πραγματεύεται συγκεκριμένο θέμα χωρίς να το εξαντλεί, εκφράζει τις προσωπικές απόψεις του γράφοντος και δεν ταυτίζεται ούτε με λογοτεχνικά κείμενα ούτε με εμπεριστατωμένες μελέτες
+</skos:definition>
+<skos:definition xml:lang="en">
+Short literary compositions on single subjects, often presenting the personal view of the author
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026291">
+<rdfs:label xml:lang="en">essays</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Essays</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Δοκίμια</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/474726432">
+<skos:prefLabel xml:lang="en">Virtual Reality</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αρχείο εικονικής πραγματικότητας</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/160769568"/>
+<ekt:prefLabelInPlural xml:lang="el">Αρχεία εικονικής πραγματικότητας</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/afierwmatikes-kartes-agiwn">
+<skos:prefLabel xml:lang="el">Αφιερωματική κάρτα Αγίων</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Santino</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<skos:definition xml:lang="el">
+Τυπωμένη κάρτα που φέρει στη μια πλευρά την εικόνα ενός ιερού προσώπου ή ένα θρησκευτικό θέμα και στην άλλη πλευρά μία προσευχή.
+</skos:definition>
+<ekt:prefLabelInPlural xml:lang="en">Santini</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αφιερωματικές κάρτες Αγίων</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1471871711">
+<skos:prefLabel xml:lang="en">Printing proof</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τυπογραφικό δοκίμιο</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/ektypwsh"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300266034">
+<rdfs:label xml:lang="en">proofs (prints by function)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/afisa">
+<skos:prefLabel xml:lang="en">Poster</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αφίσα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Printed-material"/>
+<skos:definition xml:lang="el">
+Νotices, usually decorative or pictorial, intended to be posted to advertise, promote, or publicize an activity, cause, product, or service; also, decorative, mass-produced prints intended for hanging.
+</skos:definition>
+<skos:definition xml:lang="el">
+Ειδοποιήσεις, συνήθως διακοσμητικές ή εικονογραφικές, που προορίζονται να τοποθετηθούν για να διαφημίσουν, να προωθήσουν ή να δημοσιοποιήσουν μια δραστηριότητα, σκοπό, προϊόν ή υπηρεσία. Επίσης, διακοσμητικές, μαζικής παραγωγής εκτυπώσεις που προορίζονται για ανάρτηση.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300027221">
+<rdfs:label xml:lang="en">posters</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Αφίσες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Posters</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/aggeio">
+<skos:prefLabel xml:lang="el">Αγγείο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Vase</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/skeyos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300132254">
+<rdfs:label xml:lang="en">vases</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Vases</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αγγεία</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1979799648">
+<skos:prefLabel xml:lang="el">Σενάριo</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Script</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026487">
+<rdfs:label xml:lang="en">scripts (documents)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Σενάρια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Scripts</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1875353198">
+<skos:prefLabel xml:lang="el">Μουσικός δίσκος</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Phonograph record</skos:prefLabel>
+<skos:altLabel xml:lang="en">LP</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028643">
+<rdfs:label xml:lang="en">phonograph records</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Μουσικοί δίσκοι</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Phonograph records</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/trapoyla">
+<skos:prefLabel xml:lang="en">Playing cards</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τράπουλα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<skos:definition xml:lang="el">
+Τυπωμένες κάρτες που κατασκευάζονται σε σετ καθορισμένου αριθμού και χρησιμοποιούνται κατά τη διάρκεια του παιχνιδιού. Τα σύμβολα ή τα σχέδια μπορεί να ακολουθούν ένα πρότυπο ή σύστημα κατάταξης ή μπορεί να είναι ξεχωριστά και εξατομικευμένα.
+</skos:definition>
+<skos:definition xml:lang="en">
+Cards made in sets of a designated number and marked for use as game accessories during play. The markings or designs may follow a standard suit or rank system or may be special and individualized.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300211294">
+<rdfs:label xml:lang="en">playing cards</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τράπουλες</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/xaraktiko-ergo">
+<skos:prefLabel xml:lang="en">Engraving</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Έργο χαρακτικής</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/lithografia"/>
+<skos:definition xml:lang="en">
+Prints on paper incorporating impressions of a reverse design created on a printing plate, usually copper, into which the design has been incised (engraved).
+</skos:definition>
+<skos:definition xml:lang="el">
+Εκτυπώσεις σε χαρτί που περιλαμβάνουν αποτυπώσεις αντίστροφης σχεδίασης που δημιουργείται σε μια πλάκα εκτύπωσης, συνήθως χαλκού, στην οποία το σχέδιο έχει εγχυθεί (χαραγμένο)
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300041340">
+<rdfs:label xml:lang="en">engravings (prints)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Engravings</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Έργα χαρακτικής</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/tekmhrio-synedrioy168">
+<skos:prefLabel xml:lang="en">Conference item</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τεκμήριο συνεδρίου</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/hxografhseis"/>
+<ekt:prefLabelInPlural xml:lang="en">Conference items</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Τεκμήρια συνεδρίου</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/pinakida">
+<skos:prefLabel xml:lang="en">Tablet</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Πινακίδα</skos:prefLabel>
+<skos:altLabel xml:lang="en">Writing board</skos:altLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300262572">
+<rdfs:label xml:lang="en">writing boards (tablets)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Πινακίδες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Tablets</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/arxitektoniko-melos">
+<skos:prefLabel xml:lang="el">Αρχιτεκτονικό μέλος</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Architectural element</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300000885">
+<rdfs:label xml:lang="en">architectural elements</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="en">Architectural elements</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="el">Αρχιτεκτονικά μέλη</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/2051358464">
+<skos:prefLabel xml:lang="en">Cultural production</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Πολιτιστική παραγωγή</skos:prefLabel>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Cultural-event"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Play"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1538127200"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/21170400"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/Concert"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/1544210272"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/24336480"/>
+<ekt:prefLabelInPlural xml:lang="el">Πολιτιστικές παραγωγές</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Cultural productions</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/24336480">
+<skos:prefLabel xml:lang="en">Music track</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Μουσικό κομμάτι</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/2051358464"/>
+<ekt:prefLabelInPlural xml:lang="el">Μουσικά κομμάτια</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Music tracks</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/biblio">
+<skos:prefLabel xml:lang="el">Βιβλίο</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Book</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/keimeno"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/452063584"/>
+<skos:narrower rdf:resource="http://semantics.gr/authorities/ekt-item-types/leksiko"/>
+<skos:definition xml:lang="en">
+Items comprising a collection of leaves of paper, parchment, wood, stiffened textile, ivory, metal tablets, or other flat material, that are blank, written on, or printed, and are strung or bound together in a volume.
+</skos:definition>
+<skos:definition xml:lang="el">
+Υλικός φορέας γραπτού ή εικαστικού περιεχομένου, που αποτελείται από έναν αριθμό συνδεδεμένων τεμαχίων χαρτιού (συρραφή ή συγκόλληση αυτών) καθώς και εξώφυλλο. Κάθε φύλλο και σελίδα χαρτιού μπορεί να είναι είτε κενή, είτε γραμμένη. Σε προγενέστερες εποχές, το βιβλίο συνιστούσε συλλογή περγαμηνών, ξύλου, σκληρυμένου κλωστοϋφαντουργικού προϊόντος, ελεφαντόδοντου, μεταλλικών δισκίων ή άλλων επίπεδων υλικών. Στις μέρες μας ωστόσο, συναντά κανείς και το βιβλίο σε ηλεκτρονική μορφή (e-book).
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300028051">
+<rdfs:label xml:lang="en">books</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://dbpedia.org/page/Book">
+<rdfs:label xml:lang="en">Book</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Βιβλία</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Books</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1404655680">
+<skos:prefLabel xml:lang="en">Phone card</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Τηλεκάρτα</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Card"/>
+<ekt:prefLabelInPlural xml:lang="el">Τηλεκάρτες</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Phone cards</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/kolaz">
+<skos:prefLabel xml:lang="en">Collage</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Κολάζ</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/disdiastata-grafika"/>
+<skos:definition xml:lang="el">
+Έργο σε δύο διαστάσεις ή σε πολύ χαμηλό ανάγλυφο που έγινε με κόλληση χαρτιού, υφασμάτων, φωτογραφιών ή άλλων υλικών σε μια επίπεδη επιφάνεια
+</skos:definition>
+<skos:definition xml:lang="en">
+Work in two dimensions or very low relief that was made by gluing paper, fabrics, photographs, or other materials onto a flat surface
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300033963">
+<rdfs:label xml:lang="en">collages (visual works)</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/apomnhmoneymata">
+<skos:prefLabel xml:lang="el">Απομνημονεύματα</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Memoirs</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/Literary-work"/>
+<skos:definition xml:lang="en">
+Narratives or histories autobiographical in nature or stressing the author's personal experience of the events
+</skos:definition>
+<skos:definition xml:lang="el">
+Αφηγήσεις ή ιστορίες αυτοβιογραφικού χαρακτήρα με έμφαση στην προσωπική εμπειρία του συγγραφέα από τα γεγονότα.
+</skos:definition>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300202559">
+<rdfs:label xml:lang="en">Memoirs</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/1682019360">
+<skos:prefLabel xml:lang="el">Τηλεφωνικός κατάλογος</skos:prefLabel>
+<skos:prefLabel xml:lang="en">Telephone book</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/katalogos"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300026281">
+<rdfs:label xml:lang="en">telephone directories</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Τηλεφωνικοί κατάλογοι</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Telephone books</ekt:prefLabelInPlural>
+</skos:Concept>
+<skos:Concept rdf:about="http://semantics.gr/authorities/ekt-item-types/arxaiologikos-xwros">
+<skos:prefLabel xml:lang="en">Archaeological site</skos:prefLabel>
+<skos:prefLabel xml:lang="el">Αρχαιολογικός χώρος</skos:prefLabel>
+<skos:broader rdf:resource="http://semantics.gr/authorities/ekt-item-types/trisdiastata-antikeimena--erga-texnhs"/>
+<skos:exactMatch>
+<rdf:Description rdf:about="http://vocab.getty.edu/aat/300000810">
+<rdfs:label xml:lang="en">archaeological sites</rdfs:label>
+</rdf:Description>
+</skos:exactMatch>
+<ekt:prefLabelInPlural xml:lang="el">Αρχαιολογικοί χώροι</ekt:prefLabelInPlural>
+<ekt:prefLabelInPlural xml:lang="en">Archaeological sites</ekt:prefLabelInPlural>
+</skos:Concept>
+</rdf:RDF>
