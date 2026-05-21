@@ -27,6 +27,10 @@ export OPENAI_API_KEY="your-openai-api-key"
 
 ### Step 2: Run the Generation Script
 
+The generation script is `run_translation.py`. It takes `puretext_chunks.jsonl` as input, processes the records, and saves the generated outputs in the `outputs/` folder. Logs are saved in the `logs/` folder.
+
+Below is an example use with a limit of 10 records, which is useful for testing:
+
 ```bash
 python run_translation.py puretext_chunks.jsonl \
   --provider gemini \
@@ -38,6 +42,19 @@ python run_translation.py puretext_chunks.jsonl \
   --max-hints 1500 \
   --thinking-level low
 ```
+To run the script on the full dataset, remove the --limit 10 argument:
+
+```bash
+python run_translation.py puretext_chunks.jsonl \
+  --provider gemini \
+  --model gemini-3.5-flash \
+  --greek-only \
+  --start 1000 \
+  --hint-threshold 0.9 \
+  --max-hints 1500 \
+  --thinking-level low
+```
+
 
 ## Input Format
 
