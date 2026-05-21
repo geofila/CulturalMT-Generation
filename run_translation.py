@@ -378,21 +378,21 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                 )
                 translation_with_hints, model = translate(description, terms_translation, args)
 
-                no_hints_args = argparse.Namespace(**vars(args))
-                no_hints_args.no_hints = True
-                logger.info(
-                    "Translating line=%s id=%s provider=%s hints=no",
-                    line_number,
-                    record_id,
-                    args.provider,
-                )
-                translation_no_hints, model = translate(description, terms_translation, no_hints_args)
-                counts["translated"] += 2
+                # no_hints_args = argparse.Namespace(**vars(args))
+                # no_hints_args.no_hints = True
+                # logger.info(
+                #     "Translating line=%s id=%s provider=%s hints=no",
+                #     line_number,
+                #     record_id,
+                #     args.provider,
+                # )
+                # translation_no_hints, model = translate(description, terms_translation, no_hints_args)
+                counts["translated"] += 1
 
                 output_record.update(
                     {
                         "translation_with_hints": translation_with_hints,
-                        "translation_no_hints": translation_no_hints,
+                        # "translation_no_hints": translation_no_hints,
                         "provider": args.provider,
                         "model": model,
                     }
