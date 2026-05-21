@@ -10,8 +10,9 @@ This folder intentionally does not include any Label Studio code.
 pip install -r requirements.txt
 ```
 
-## API Keys
+## How to run the script
 
+### Step 1: Define the API Key
 For Gemini:
 
 ```bash
@@ -24,7 +25,7 @@ For OpenAI:
 export OPENAI_API_KEY="your-openai-api-key"
 ```
 
-You can also pass a key directly when you run the script:
+### Step 2: Run the Generation Script
 
 ```bash
 python run_translation.py puretext_chunks.jsonl \
