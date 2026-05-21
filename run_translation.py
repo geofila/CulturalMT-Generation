@@ -1,4 +1,5 @@
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -22,6 +23,17 @@ DEFAULT_MODELS = {
     "gemini": "gemini-3.5-flash",
     "openai": "gpt-5-mini",
 }
+
+
+def optional_path(value):
+    if value is None:
+        return None
+
+    value = str(value).strip()
+    if not value or value.lower() in {"none", "null"}:
+        return None
+
+    return Path(value)
 
 
 def build_parser():
@@ -82,6 +94,17 @@ def build_parser():
         help="Gemini thinking level. Use 'none' to omit thinking config.",
     )
     parser.add_argument("--outputs-dir", default=Path(__file__).resolve().parent / "outputs")
+    parser.add_argument(
+        "--continue-generation",
+        nargs="?",
+        const=None,
+        type=optional_path,
+        metavar="OUTPUT_JSONL",
+        help=(
+            "Append to an existing JSONL output file and skip input records that already "
+            "have successful translations in it."
+        ),
+    )
     parser.add_argument("--logs-dir", default=Path(__file__).resolve().parent / "logs")
     parser.add_argument("--id-field", default="id", help="JSONL field containing the record id.")
     parser.add_argument("--text-field", default="text", help="JSONL field containing the source text.")
@@ -240,6 +263,103 @@ def build_batch_output_path(outputs_dir, source_path, provider):
     return output_dir / f"{source_path.stem}_{suffix}_{timestamp}.jsonl"
 
 
+def normalize_resume_text(text):
+    return re.sub(r"\s+", " ", (text or "").strip())
+
+
+def resume_hash(text):
+    normalized = normalize_resume_text(text)
+    if not normalized:
+        return None
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def has_successful_output(record, baselines_only=False):
+    if record.get("error"):
+        return False
+
+    translation_fields = ("translation", "translation_with_hints", "translation_no_hints")
+    if any(isinstance(record.get(field), str) and record[field].strip() for field in translation_fields):
+        return True
+
+    if baselines_only:
+        baseline_fields = ("description_for_translation", "prompt", "google_translation")
+        return any(field in record for field in baseline_fields)
+
+    return False
+
+
+def build_resume_keys(record, args, description=None):
+    keys = set()
+
+    for id_field in {args.id_field, "id"}:
+        value = record.get(id_field)
+        if value is not None and str(value).strip():
+            keys.add(("id", str(value).strip()))
+
+    text_hash = resume_hash(record.get(args.text_field) or record.get("text") or "")
+    if text_hash:
+        keys.add(("text_sha256", text_hash))
+
+    description_text = (
+        description
+        or record.get("description_for_translation")
+        or record.get("description")
+        or ""
+    )
+    description_hash = resume_hash(description_text)
+    if description_hash:
+        keys.add(("description_sha256", description_hash))
+
+    return keys
+
+
+def load_completed_resume_keys(output_path, args, logger):
+    completed_keys = set()
+    completed_records = 0
+
+    with Path(output_path).open("r", encoding="utf-8") as handle:
+        for output_line_number, line in enumerate(handle, start=1):
+            line = line.strip()
+            if not line:
+                continue
+
+            try:
+                record = json.loads(line)
+            except json.JSONDecodeError:
+                logger.warning(
+                    "Ignoring invalid JSON while loading resume file line=%s path=%s",
+                    output_line_number,
+                    output_path,
+                )
+                continue
+
+            if not has_successful_output(record, baselines_only=args.baselines_only):
+                continue
+
+            completed_records += 1
+            completed_keys.update(build_resume_keys(record, args))
+
+    logger.info(
+        "Loaded %s completed records and %s resume keys from %s",
+        completed_records,
+        len(completed_keys),
+        output_path,
+    )
+    return completed_keys, completed_records
+
+
+def ensure_jsonl_append_newline(output_path):
+    output_path = Path(output_path)
+    if not output_path.exists() or output_path.stat().st_size == 0:
+        return
+
+    with output_path.open("rb+") as handle:
+        handle.seek(-1, 2)
+        if handle.read(1) != b"\n":
+            handle.write(b"\n")
+
+
 def iter_jsonl_records(path, start=0, limit=None):
     processed = 0
     seen = 0
@@ -262,13 +382,28 @@ def iter_jsonl_records(path, start=0, limit=None):
 
 
 def run_jsonl_batch(args, source_path, logger, log_file):
+    if args.continue_generation and args.print_hints_only:
+        raise ValueError("--continue-generation cannot be used with --print-hints-only.")
+
     model = args.model or DEFAULT_MODELS[args.provider]
     output_provider = "baselines" if args.baselines_only else args.provider
-    output_path = None if args.print_hints_only else build_batch_output_path(
-        args.outputs_dir,
-        source_path,
-        output_provider,
-    )
+    completed_keys = set()
+    completed_records = 0
+
+    if args.print_hints_only:
+        output_path = None
+    elif args.continue_generation:
+        output_path = Path(args.continue_generation)
+        if not output_path.exists():
+            raise FileNotFoundError(f"Continue generation file does not exist: {output_path}")
+        completed_keys, completed_records = load_completed_resume_keys(output_path, args, logger)
+        ensure_jsonl_append_newline(output_path)
+    else:
+        output_path = build_batch_output_path(
+            args.outputs_dir,
+            source_path,
+            output_provider,
+        )
     matcher = None
 
     if not args.no_hints:
@@ -276,8 +411,16 @@ def run_jsonl_batch(args, source_path, logger, log_file):
         matcher = DictionaryMatcher(dictionaries_dir=args.dictionaries_dir)
         logger.info("Loaded %s RDF terms", len(matcher.terms))
 
-    counts = {"processed": 0, "eligible": 0, "skipped_greek_filter": 0, "translated": 0, "failed": 0}
-    output_handle = output_path.open("w", encoding="utf-8") if output_path else None
+    counts = {
+        "processed": 0,
+        "eligible": 0,
+        "skipped_existing": 0,
+        "skipped_greek_filter": 0,
+        "translated": 0,
+        "failed": 0,
+    }
+    output_mode = "a" if args.continue_generation else "w"
+    output_handle = output_path.open(output_mode, encoding="utf-8") if output_path else None
 
     try:
         for line_number, record in iter_jsonl_records(source_path, start=args.start, limit=args.limit):
@@ -285,7 +428,23 @@ def run_jsonl_batch(args, source_path, logger, log_file):
             record_id = record.get(args.id_field)
 
             try:
+                resume_keys = build_resume_keys(record, args)
+                if resume_keys & completed_keys:
+                    counts["skipped_existing"] += 1
+                    logger.info("Skipping already generated line=%s id=%s", line_number, record_id)
+                    continue
+
                 description, terms_translation = parse_jsonl_record(record, args)
+                resume_keys = build_resume_keys(
+                    record,
+                    args,
+                    description=description,
+                )
+                if resume_keys & completed_keys:
+                    counts["skipped_existing"] += 1
+                    logger.info("Skipping already generated line=%s id=%s", line_number, record_id)
+                    continue
+
                 should_process, greek_char_count, has_english = passes_greek_filter(description, args)
                 if not should_process:
                     counts["skipped_greek_filter"] += 1
@@ -352,6 +511,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                 if args.baselines_only:
                     output_handle.write(json.dumps(output_record, ensure_ascii=False) + "\n")
                     output_handle.flush()
+                    completed_keys.update(resume_keys)
                     continue
 
                 if args.single_translation:
@@ -368,6 +528,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                     )
                     output_handle.write(json.dumps(output_record, ensure_ascii=False) + "\n")
                     output_handle.flush()
+                    completed_keys.update(resume_keys)
                     continue
 
                 logger.info(
@@ -399,6 +560,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                 )
                 output_handle.write(json.dumps(output_record, ensure_ascii=False) + "\n")
                 output_handle.flush()
+                completed_keys.update(resume_keys)
             except Exception as exc:
                 counts["failed"] += 1
                 logger.exception("Failed line=%s id=%s", line_number, record_id)
@@ -419,18 +581,27 @@ def run_jsonl_batch(args, source_path, logger, log_file):
             output_handle.close()
 
     logger.info(
-        "Batch done processed=%s eligible=%s skipped_greek_filter=%s translated=%s failed=%s",
+        "Batch done processed=%s eligible=%s skipped_existing=%s skipped_greek_filter=%s translated=%s failed=%s",
         counts["processed"],
         counts["eligible"],
+        counts["skipped_existing"],
         counts["skipped_greek_filter"],
         counts["translated"],
         counts["failed"],
     )
+    if args.continue_generation:
+        print(
+            "Continue generation: "
+            f"file={output_path} "
+            f"completed_loaded={completed_records} "
+            f"skipped_existing={counts['skipped_existing']}"
+        )
     if args.greek_only:
         print(
             "Greek filter: "
             f"processed={counts['processed']} "
             f"eligible={counts['eligible']} "
+            f"skipped_existing={counts['skipped_existing']} "
             f"skipped={counts['skipped_greek_filter']} "
             f"min_greek_chars={args.min_greek_chars} "
             "rule=has_greek_and_no_english"

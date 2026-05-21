@@ -55,6 +55,22 @@ python run_translation.py puretext_chunks.jsonl \
   --thinking-level low
 ```
 
+Continue a generation in the same output file:
+
+```bash
+python run_translation.py puretext_chunks.jsonl \
+  --provider gemini \
+  --model gemini-3.5-flash \
+  --greek-only \
+  --start 1000 \
+  --hint-threshold 0.9 \
+  --max-hints 1500 \
+  --thinking-level low
+  --continue-generation outputs/puretext_chunks_gemini_translations_20260521_161959.jsonl
+```
+
+When `--continue-generation` points to an existing output JSONL, already translated records are skipped and new results are appended to the end of that file. If it is omitted, or passed as `none`/`None`, the script starts a fresh generation from the beginning and creates a new timestamped output file.
+
 
 ## Input Format
 
