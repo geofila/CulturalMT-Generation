@@ -58,6 +58,8 @@ def translate_cultural_description_with_gemini(
     model="gemini-3.5-flash",
     use_hints=True,
     thinking_level="low",
+    retry_attempts=8,
+    retry_max_delay=120.0,
 ):
     try:
         from google import genai
@@ -68,7 +70,24 @@ def translate_cultural_description_with_gemini(
         ) from exc
 
     resolved_api_key = api_key or os.getenv("GEMINI_API_KEY")
-    client = genai.Client(api_key=resolved_api_key) if resolved_api_key else genai.Client()
+    # Gemini returns transient 503 UNAVAILABLE ("high demand") under load.
+    # The SDK default is only ~5 retries over ~60s, which sustained overload
+    # outlasts, so we extend the retry budget here (408/429/5xx are retried
+    # by default).
+    http_options = types.HttpOptions(
+        retry_options=types.HttpRetryOptions(
+            attempts=retry_attempts,
+            initial_delay=2.0,
+            max_delay=retry_max_delay,
+            exp_base=2.0,
+            jitter=1.0,
+        )
+    )
+    client = (
+        genai.Client(api_key=resolved_api_key, http_options=http_options)
+        if resolved_api_key
+        else genai.Client(http_options=http_options)
+    )
     prompt = _build_prompt(description, terms_translation, use_hints)
 
     config_kwargs = {"system_instruction": SYSTEM_INSTRUCTION}
