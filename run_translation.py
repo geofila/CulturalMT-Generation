@@ -93,6 +93,18 @@ def build_parser():
         default="low",
         help="Gemini thinking level. Use 'none' to omit thinking config.",
     )
+    parser.add_argument(
+        "--retry-attempts",
+        type=int,
+        default=8,
+        help="Gemini: max request attempts (including the first) on transient errors (408/429/5xx).",
+    )
+    parser.add_argument(
+        "--retry-max-delay",
+        type=float,
+        default=120.0,
+        help="Gemini: maximum backoff delay between retries, in seconds.",
+    )
     parser.add_argument("--outputs-dir", default=Path(__file__).resolve().parent / "outputs")
     parser.add_argument(
         "--continue-generation",
@@ -218,6 +230,8 @@ def translate(description, terms_translation, args):
                 model=model,
                 use_hints=use_hints,
                 thinking_level=thinking_level,
+                retry_attempts=args.retry_attempts,
+                retry_max_delay=args.retry_max_delay,
             ),
             model,
         )
