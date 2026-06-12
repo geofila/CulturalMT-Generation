@@ -74,7 +74,14 @@ def translate_cultural_description_with_gemini(
     # The SDK default is only ~5 retries over ~60s, which sustained overload
     # outlasts, so we extend the retry budget here (408/429/5xx are retried
     # by default).
+    # A per-request timeout is essential: without it a connection that the
+    # server accepts but never replies on (seen under the same overload that
+    # produces 503s) leaves the client blocked on recv() indefinitely. The
+    # retry options above only fire on error responses or connection failures,
+    # not on a silently stalled-but-open socket, so the timeout is what lets a
+    # hung request fail and be retried. Value is in milliseconds.
     http_options = types.HttpOptions(
+        timeout=120_000,
         retry_options=types.HttpRetryOptions(
             attempts=retry_attempts,
             initial_delay=2.0,
