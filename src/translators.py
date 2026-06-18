@@ -97,7 +97,21 @@ def translate_cultural_description_with_gemini(
     )
     prompt = _build_prompt(description, terms_translation, use_hints)
 
-    config_kwargs = {"system_instruction": SYSTEM_INSTRUCTION}
+    config_kwargs = {
+        "system_instruction": SYSTEM_INSTRUCTION,
+        # Museum/archaeological catalogue text legitimately describes nudity,
+        # erotic scenes, etc. The default safety filters return an empty
+        # response on those, so disable them for this translation task.
+        "safety_settings": [
+            types.SafetySetting(category=c, threshold=types.HarmBlockThreshold.OFF)
+            for c in (
+                types.HarmCategory.HARM_CATEGORY_HARASSMENT,
+                types.HarmCategory.HARM_CATEGORY_HATE_SPEECH,
+                types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
+                types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+            )
+        ],
+    }
     if thinking_level is not None:
         config_kwargs["thinking_config"] = types.ThinkingConfig(thinking_level=thinking_level)
 
@@ -109,7 +123,19 @@ def translate_cultural_description_with_gemini(
 
     translation = (response.text or "").strip()
     if not translation:
-        raise RuntimeError("Gemini returned an empty translation.")
+        # Surface the real cause instead of a generic message, so a safety
+        # block is distinguishable from recitation / token-budget exhaustion.
+        reason = ""
+        try:
+            cand = (response.candidates or [None])[0]
+            finish_reason = getattr(cand, "finish_reason", None)
+            block_reason = getattr(
+                getattr(response, "prompt_feedback", None), "block_reason", None
+            )
+            reason = f" (finish_reason={finish_reason}, block_reason={block_reason})"
+        except Exception:
+            pass
+        raise RuntimeError(f"Gemini returned an empty translation.{reason}")
     return translation
 
 
