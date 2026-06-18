@@ -12,18 +12,29 @@ pip install -r requirements.txt
 
 ## How to run the script
 
-Set the Gemini key:
+### Step 1: Define the API Key
+For Gemini:
 
 ```bash
 export GEMINI_API_KEY="your-gemini-api-key"
 ```
 
-Run the annotated Gemini batch with image context:
+For OpenAI:
+
+```bash
+export OPENAI_API_KEY="your-openai-api-key"
+```
+
+### Step 2: Run the Generation Script
+
+The generation script is `run_translation.py`. It takes `puretext_chunks.jsonl` as input, processes the records, and saves the generated outputs in the `outputs/` folder. Logs are saved in the `logs/` folder.
+
+Run the annotated Gemini batch:
 
 ```bash
 python run_translation.py puretext_chunks.jsonl \
   --provider gemini \
-  --model gemini-3.1-flash-lite \
+  --model gemini-3.5-flash \
   --annotation-input-dir input \
   --greek-only \
   --hint-threshold 0.9 \
@@ -31,13 +42,7 @@ python run_translation.py puretext_chunks.jsonl \
   --thinking-level low
 ```
 
-For a one-record smoke test, add:
-
-```bash
---start 119 --limit 1
-```
-
-The files in `input/` define the annotated records. Outputs go to `outputs/` and image-context outputs are named `puretext_chunks_gemini_translations_with_images_*.jsonl`.
+For Gemini, image context is enabled by default. The runner derives the SearchCulture thumbnail from the record id, downloads it into `image_cache/thumbnails/`, and sends it with the prompt. Use `--no-thumbnails` only if you want to run without images.
 
 ## Input Format
 
@@ -62,11 +67,12 @@ terms_translation
 hint_matches
 google_translation
 translation_with_hints
+translation_no_hints
 provider
 model
 ```
 
-The default run writes `translation_with_hints`. The `provider` field says which provider was used, for example `gemini` or `openai`.
+The selected provider is called twice per record: once with RDF hints and once without hints. The `provider` field at the end says which provider was used, for example `gemini` or `openai`.
 
 Test only the first 5 records:
 
