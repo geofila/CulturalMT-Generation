@@ -13,6 +13,13 @@ from .dictionaries import (
     load_all_rdf_terms,
 )
 from .storage import configure_logging, ensure_runtime_dirs, save_translation_result
+from .annotation_inputs import load_annotation_record_ids
+from .images import (
+    DEFAULT_MAX_IMAGE_BYTES,
+    derive_searchculture_thumbnail_url,
+    download_thumbnail,
+    resolve_record_thumbnail_url,
+)
 from .translators import (
     google_translate_text,
     translate_cultural_block_with_gemini,
@@ -35,6 +42,11 @@ __all__ = [
     "configure_logging",
     "ensure_runtime_dirs",
     "save_translation_result",
+    "load_annotation_record_ids",
+    "DEFAULT_MAX_IMAGE_BYTES",
+    "derive_searchculture_thumbnail_url",
+    "download_thumbnail",
+    "resolve_record_thumbnail_url",
     "google_translate_text",
     "translate_cultural_block_with_gemini",
     "translate_cultural_block_with_gpt",

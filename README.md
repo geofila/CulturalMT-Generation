@@ -12,65 +12,32 @@ pip install -r requirements.txt
 
 ## How to run the script
 
-### Step 1: Define the API Key
-For Gemini:
+Set the Gemini key:
 
 ```bash
 export GEMINI_API_KEY="your-gemini-api-key"
 ```
 
-For OpenAI:
-
-```bash
-export OPENAI_API_KEY="your-openai-api-key"
-```
-
-### Step 2: Run the Generation Script
-
-The generation script is `run_translation.py`. It takes `puretext_chunks.jsonl` as input, processes the records, and saves the generated outputs in the `outputs/` folder. Logs are saved in the `logs/` folder.
-
-Below is an example use with a limit of 10 records, which is useful for testing:
+Run the annotated Gemini batch with image context:
 
 ```bash
 python run_translation.py puretext_chunks.jsonl \
   --provider gemini \
-  --model gemini-3.5-flash \
+  --model gemini-3.1-flash-lite \
+  --annotation-input-dir input \
   --greek-only \
-  --start 1000 \
-  --limit 10 \
-  --hint-threshold 0.9 \
-  --max-hints 1500 \
-  --thinking-level low
-```
-To run the script on the full dataset, remove the --limit 10 argument:
-
-```bash
-python run_translation.py puretext_chunks.jsonl \
-  --provider gemini \
-  --model gemini-3.5-flash \
-  --greek-only \
-  --start 1000 \
   --hint-threshold 0.9 \
   --max-hints 1500 \
   --thinking-level low
 ```
 
-Continue a generation in the same output file:
+For a one-record smoke test, add:
 
 ```bash
-python run_translation.py puretext_chunks.jsonl \
-  --provider gemini \
-  --model gemini-3.5-flash \
-  --greek-only \
-  --start 1000 \
-  --hint-threshold 0.9 \
-  --max-hints 1500 \
-  --thinking-level low
-  --continue-generation outputs/puretext_chunks_gemini_translations_20260521_161959.jsonl
+--start 119 --limit 1
 ```
 
-When `--continue-generation` points to an existing output JSONL, already translated records are skipped and new results are appended to the end of that file. If it is omitted, or passed as `none`/`None`, the script starts a fresh generation from the beginning and creates a new timestamped output file.
-
+The files in `input/` define the annotated records. Outputs go to `outputs/` and image-context outputs are named `puretext_chunks_gemini_translations_with_images_*.jsonl`.
 
 ## Input Format
 
@@ -95,12 +62,11 @@ terms_translation
 hint_matches
 google_translation
 translation_with_hints
-translation_no_hints
 provider
 model
 ```
 
-The selected provider is called twice per record: once with RDF hints and once without hints. The `provider` field at the end says which provider was used, for example `gemini` or `openai`.
+The default run writes `translation_with_hints`. The `provider` field says which provider was used, for example `gemini` or `openai`.
 
 Test only the first 5 records:
 

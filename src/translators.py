@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from .prompts import (
     SYSTEM_INSTRUCTION,
@@ -8,10 +9,17 @@ from .prompts import (
 )
 
 
-def _build_prompt(description, terms_translation, use_hints):
+def _build_prompt(description, terms_translation, use_hints, has_image_context=False):
     if use_hints:
-        return build_cultural_translation_prompt(description, terms_translation)
-    return build_cultural_translation_prompt_no_hints(description)
+        return build_cultural_translation_prompt(
+            description,
+            terms_translation,
+            has_image_context=has_image_context,
+        )
+    return build_cultural_translation_prompt_no_hints(
+        description,
+        has_image_context=has_image_context,
+    )
 
 
 def translate_cultural_description_with_gpt(
@@ -60,6 +68,8 @@ def translate_cultural_description_with_gemini(
     thinking_level="low",
     retry_attempts=8,
     retry_max_delay=120.0,
+    image_path=None,
+    image_mime_type=None,
 ):
     try:
         from google import genai
@@ -95,7 +105,13 @@ def translate_cultural_description_with_gemini(
         if resolved_api_key
         else genai.Client(http_options=http_options)
     )
-    prompt = _build_prompt(description, terms_translation, use_hints)
+    has_image_context = bool(image_path)
+    prompt = _build_prompt(
+        description,
+        terms_translation,
+        use_hints,
+        has_image_context=has_image_context,
+    )
 
     config_kwargs = {
         "system_instruction": SYSTEM_INSTRUCTION,
@@ -115,9 +131,20 @@ def translate_cultural_description_with_gemini(
     if thinking_level is not None:
         config_kwargs["thinking_config"] = types.ThinkingConfig(thinking_level=thinking_level)
 
+    contents = prompt
+    if image_path:
+        image_bytes = Path(image_path).read_bytes()
+        contents = [
+            prompt,
+            types.Part.from_bytes(
+                data=image_bytes,
+                mime_type=image_mime_type or "image/jpeg",
+            ),
+        ]
+
     response = client.models.generate_content(
         model=model,
-        contents=prompt,
+        contents=contents,
         config=types.GenerateContentConfig(**config_kwargs),
     )
 
@@ -170,6 +197,8 @@ def translate_cultural_block_with_gemini(
     model="gemini-3.5-flash",
     use_hints=True,
     thinking_level="low",
+    image_path=None,
+    image_mime_type=None,
 ):
     description, terms_translation = split_description_and_terms(raw_text)
     return translate_cultural_description_with_gemini(
@@ -179,4 +208,6 @@ def translate_cultural_block_with_gemini(
         model=model,
         use_hints=use_hints,
         thinking_level=thinking_level,
+        image_path=image_path,
+        image_mime_type=image_mime_type,
     )

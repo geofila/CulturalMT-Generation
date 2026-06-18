@@ -7,11 +7,15 @@ from datetime import datetime
 from pathlib import Path
 
 from src import (
+    DEFAULT_MAX_IMAGE_BYTES,
     DEFAULT_DICTIONARIES_DIR,
     DictionaryMatcher,
     build_terms_translation_from_description,
     configure_logging,
+    download_thumbnail,
     google_translate_text,
+    load_annotation_record_ids,
+    resolve_record_thumbnail_url,
     save_translation_result,
     split_description_and_terms,
     translate_cultural_description_with_gemini,
@@ -23,6 +27,9 @@ DEFAULT_MODELS = {
     "gemini": "gemini-3.5-flash",
     "openai": "gpt-5-mini",
 }
+PROJECT_DIR = Path(__file__).resolve().parent
+DEFAULT_ANNOTATION_INPUT_DIR = PROJECT_DIR / "input"
+DEFAULT_THUMBNAIL_CACHE_DIR = PROJECT_DIR / "image_cache" / "thumbnails"
 
 
 def optional_path(value):
@@ -45,9 +52,46 @@ def build_parser():
         nargs="?",
         help="JSONL input file. Each line should contain a JSON object with id/text fields.",
     )
+    parser.add_argument(
+        "--annotation-input-dir",
+        type=optional_path,
+        default=DEFAULT_ANNOTATION_INPUT_DIR,
+        help=(
+            "Folder with Label Studio annotation exports. Only JSONL records whose ids "
+            "appear in these files are processed. Use 'none' to disable this filter."
+        ),
+    )
     parser.add_argument("--provider", choices=["gemini", "openai"], default="gemini")
     parser.add_argument("--model", help="Model name. Defaults depend on provider.")
     parser.add_argument("--api-key", help="API key. Prefer GEMINI_API_KEY or OPENAI_API_KEY in the environment.")
+    parser.add_argument(
+        "--no-thumbnails",
+        action="store_true",
+        help="Do not download or attach SearchCulture thumbnails to Gemini requests.",
+    )
+    parser.add_argument(
+        "--require-thumbnail",
+        action="store_true",
+        help="Fail a record if its thumbnail cannot be derived or downloaded.",
+    )
+    parser.add_argument(
+        "--thumbnail-cache-dir",
+        type=Path,
+        default=DEFAULT_THUMBNAIL_CACHE_DIR,
+        help="Folder where downloaded thumbnails are cached before Gemini calls.",
+    )
+    parser.add_argument(
+        "--thumbnail-timeout",
+        type=float,
+        default=30.0,
+        help="Seconds to wait while downloading each thumbnail.",
+    )
+    parser.add_argument(
+        "--thumbnail-max-bytes",
+        type=int,
+        default=DEFAULT_MAX_IMAGE_BYTES,
+        help="Maximum thumbnail size to attach inline to Gemini.",
+    )
     parser.add_argument("--no-hints", action="store_true", help="Ignore term hints while translating.")
     parser.add_argument(
         "--dictionaries-dir",
@@ -216,7 +260,7 @@ def passes_greek_filter(description, args):
     return greek_char_count >= args.min_greek_chars and not has_english, greek_char_count, has_english
 
 
-def translate(description, terms_translation, args):
+def translate(description, terms_translation, args, image_path=None, image_mime_type=None):
     model = args.model or DEFAULT_MODELS[args.provider]
     use_hints = not args.no_hints
 
@@ -232,6 +276,8 @@ def translate(description, terms_translation, args):
                 thinking_level=thinking_level,
                 retry_attempts=args.retry_attempts,
                 retry_max_delay=args.retry_max_delay,
+                image_path=image_path,
+                image_mime_type=image_mime_type,
             ),
             model,
         )
@@ -269,11 +315,74 @@ def maybe_google_translate(description, args, logger, line_number=None, record_i
         return "", str(exc)
 
 
-def build_batch_output_path(outputs_dir, source_path, provider):
+def use_thumbnail_context(args):
+    return args.provider == "gemini" and not args.no_thumbnails
+
+
+def build_thumbnail_context(record, record_id):
+    return {
+        "thumbnail_url": resolve_record_thumbnail_url(record, record_id),
+        "thumbnail_local_path": None,
+        "thumbnail_mime_type": None,
+        "thumbnail_bytes": None,
+        "thumbnail_cached": None,
+        "thumbnail_error": None,
+        "thumbnail_used": False,
+    }
+
+
+def prepare_thumbnail_context(record, record_id, args, logger, line_number=None):
+    context = build_thumbnail_context(record, record_id)
+
+    if not use_thumbnail_context(args):
+        return context
+
+    if not context["thumbnail_url"]:
+        context["thumbnail_error"] = "Could not derive a thumbnail URL for this record."
+        if args.require_thumbnail:
+            raise ValueError(context["thumbnail_error"])
+        return context
+
+    try:
+        image_info = download_thumbnail(
+            thumbnail_url=context["thumbnail_url"],
+            cache_dir=args.thumbnail_cache_dir,
+            record_id=record_id,
+            timeout=args.thumbnail_timeout,
+            max_bytes=args.thumbnail_max_bytes,
+        )
+    except Exception as exc:
+        context["thumbnail_error"] = str(exc)
+        logger.warning(
+            "Thumbnail unavailable line=%s id=%s url=%s error=%s",
+            line_number,
+            record_id,
+            context["thumbnail_url"],
+            exc,
+        )
+        if args.require_thumbnail:
+            raise
+        return context
+
+    context.update(
+        {
+            "thumbnail_local_path": str(image_info["path"]),
+            "thumbnail_mime_type": image_info["mime_type"],
+            "thumbnail_bytes": image_info["bytes"],
+            "thumbnail_cached": image_info["cached"],
+            "thumbnail_used": True,
+        }
+    )
+    return context
+
+
+def build_batch_output_path(outputs_dir, source_path, provider, with_images=False):
     output_dir = Path(outputs_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     suffix = "baselines" if provider == "baselines" else f"{provider}_translations"
+    if with_images:
+        suffix = f"{suffix}_with_images"
     return output_dir / f"{source_path.stem}_{suffix}_{timestamp}.jsonl"
 
 
@@ -363,6 +472,19 @@ def load_completed_resume_keys(output_path, args, logger):
     return completed_keys, completed_records
 
 
+def load_annotation_filter(args, logger):
+    if not args.annotation_input_dir:
+        return None
+
+    record_ids = load_annotation_record_ids(args.annotation_input_dir)
+    logger.info(
+        "Loaded %s annotation record ids from input dir=%s",
+        len(record_ids),
+        args.annotation_input_dir,
+    )
+    return record_ids
+
+
 def ensure_jsonl_append_newline(output_path):
     output_path = Path(output_path)
     if not output_path.exists() or output_path.stat().st_size == 0:
@@ -417,8 +539,10 @@ def run_jsonl_batch(args, source_path, logger, log_file):
             args.outputs_dir,
             source_path,
             output_provider,
+            with_images=use_thumbnail_context(args),
         )
     matcher = None
+    allowed_record_ids = load_annotation_filter(args, logger)
 
     if not args.no_hints:
         logger.info("Loading RDF dictionaries once from dir=%s", args.dictionaries_dir)
@@ -429,9 +553,12 @@ def run_jsonl_batch(args, source_path, logger, log_file):
         "processed": 0,
         "eligible": 0,
         "skipped_existing": 0,
+        "skipped_id_filter": 0,
         "skipped_greek_filter": 0,
         "translated": 0,
         "failed": 0,
+        "thumbnails_used": 0,
+        "thumbnails_failed": 0,
     }
     output_mode = "a" if args.continue_generation else "w"
     output_handle = output_path.open(output_mode, encoding="utf-8") if output_path else None
@@ -442,6 +569,10 @@ def run_jsonl_batch(args, source_path, logger, log_file):
             record_id = record.get(args.id_field)
 
             try:
+                if allowed_record_ids is not None and str(record_id or "").strip() not in allowed_record_ids:
+                    counts["skipped_id_filter"] += 1
+                    continue
+
                 resume_keys = build_resume_keys(record, args)
                 if resume_keys & completed_keys:
                     counts["skipped_existing"] += 1
@@ -483,6 +614,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
 
                 prompt = build_prompt_block(description, terms_translation)
                 google_translation, google_translation_error = "", None
+                thumbnail_context = build_thumbnail_context(record, record_id)
 
                 if args.print_hints_only:
                     print(
@@ -494,6 +626,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                                 "prompt": prompt,
                                 "terms_translation": terms_translation,
                                 "hint_matches": hint_matches,
+                                **thumbnail_context,
                             },
                             ensure_ascii=False,
                         )
@@ -519,6 +652,7 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                         "google_translation": google_translation,
                         "google_translation_error": google_translation_error,
                         "source_line_number": line_number,
+                        **thumbnail_context,
                     }
                 )
 
@@ -528,9 +662,28 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                     completed_keys.update(resume_keys)
                     continue
 
+                thumbnail_context = prepare_thumbnail_context(
+                    record=record,
+                    record_id=record_id,
+                    args=args,
+                    logger=logger,
+                    line_number=line_number,
+                )
+                if thumbnail_context["thumbnail_used"]:
+                    counts["thumbnails_used"] += 1
+                if thumbnail_context["thumbnail_error"]:
+                    counts["thumbnails_failed"] += 1
+                output_record.update(thumbnail_context)
+
                 if args.single_translation:
                     logger.info("Translating line=%s id=%s provider=%s", line_number, record_id, args.provider)
-                    translation, model = translate(description, terms_translation, args)
+                    translation, model = translate(
+                        description,
+                        terms_translation,
+                        args,
+                        image_path=thumbnail_context["thumbnail_local_path"],
+                        image_mime_type=thumbnail_context["thumbnail_mime_type"],
+                    )
                     counts["translated"] += 1
 
                     output_record.update(
@@ -551,7 +704,13 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                     record_id,
                     args.provider,
                 )
-                translation_with_hints, model = translate(description, terms_translation, args)
+                translation_with_hints, model = translate(
+                    description,
+                    terms_translation,
+                    args,
+                    image_path=thumbnail_context["thumbnail_local_path"],
+                    image_mime_type=thumbnail_context["thumbnail_mime_type"],
+                )
 
                 # no_hints_args = argparse.Namespace(**vars(args))
                 # no_hints_args.no_hints = True
@@ -585,6 +744,10 @@ def run_jsonl_batch(args, source_path, logger, log_file):
                     "provider": args.provider,
                     "model": model,
                 }
+                try:
+                    error_record.update(build_thumbnail_context(record, record_id))
+                except Exception:
+                    pass
                 if output_handle:
                     output_handle.write(json.dumps(error_record, ensure_ascii=False) + "\n")
                     output_handle.flush()
@@ -595,14 +758,32 @@ def run_jsonl_batch(args, source_path, logger, log_file):
             output_handle.close()
 
     logger.info(
-        "Batch done processed=%s eligible=%s skipped_existing=%s skipped_greek_filter=%s translated=%s failed=%s",
+        "Batch done processed=%s eligible=%s skipped_existing=%s skipped_id_filter=%s "
+        "skipped_greek_filter=%s translated=%s failed=%s thumbnails_used=%s thumbnails_failed=%s",
         counts["processed"],
         counts["eligible"],
         counts["skipped_existing"],
+        counts["skipped_id_filter"],
         counts["skipped_greek_filter"],
         counts["translated"],
         counts["failed"],
+        counts["thumbnails_used"],
+        counts["thumbnails_failed"],
     )
+    if allowed_record_ids is not None:
+        print(
+            "Annotation filter: "
+            f"ids={len(allowed_record_ids)} "
+            f"processed={counts['processed']} "
+            f"skipped_id_filter={counts['skipped_id_filter']}"
+        )
+    if use_thumbnail_context(args):
+        print(
+            "Thumbnails: "
+            f"used={counts['thumbnails_used']} "
+            f"failed={counts['thumbnails_failed']} "
+            f"cache_dir={args.thumbnail_cache_dir}"
+        )
     if args.continue_generation:
         print(
             "Continue generation: "
