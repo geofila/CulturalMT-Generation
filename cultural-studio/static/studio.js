@@ -8,9 +8,18 @@ const arrow = '<svg class="pair-arrow" viewBox="0 0 32 12" aria-hidden="true"><p
 const categories = {objects:'OBJECTS', themes:'SUBJECTS & THEMES', periods:'HISTORICAL PERIODS', people:'PEOPLE', places:'PLACES'};
 const metadataNames = {dateOfBirth:'Born',dateOfDeath:'Died',gender:'Gender',professionOrOccupation:'Occupation',placeOfBirth:'Birthplace',placeOfDeath:'Place of death',begin:'Beginning',end:'End',lat:'Latitude',long:'Longitude'};
 const examples = {
-  icon: {el:'Η φορητή εικόνα χρονολογείται στη Μεταβυζαντινή περίοδο και προέρχεται από την Κρήτη. Η παράσταση της Παναγίας αποδίδεται με αυγοτέμπερα σε ξύλο και χρυσό βάθος. Το έργο φυλάσσεται στο μουσείο ως τεκμήριο της τοπικής θρησκευτικής τέχνης.', en:'The portable icon dates to the Post-Byzantine period and originates from Crete. The Virgin Mary is depicted in egg tempera on wood against a gold background. The work is preserved in the museum as a record of local religious art.'},
-  museum: {el:'Στο μουσείο εκτίθενται γλυπτά, αγγεία και χειρόγραφα από την Αθήνα. Η συλλογή περιλαμβάνει αντικείμενα καθημερινής ζωής, θρησκευτικής τέχνης και παραδοσιακής ενδυμασίας. Κάθε έκθεμα αφηγείται μια διαφορετική πτυχή της πολιτιστικής κληρονομιάς.', en:'The museum displays sculptures, vessels and manuscripts from Athens. The collection includes objects of everyday life, religious art and traditional dress. Each exhibit tells a different story of cultural heritage.'},
-  period: {el:'Το αρχαιολογικό εύρημα χρονολογείται στην Ελληνιστική περίοδο. Η επιγραφή και η διακόσμηση του αντικειμένου παρέχουν πληροφορίες για την κοινωνική και θρησκευτική ζωή στη Μακεδονία. Πρόκειται για σημαντικό τεκμήριο της τοπικής ιστορίας.', en:'The archaeological find dates to the Hellenistic period. The inscription and the decoration of the object provide information about social and religious life in Macedonia. It is an important record of local history.'}
+  "ceramics": {
+    "el": "Στην ενότητα της κινεζικής κεραμικής, τα αγγεία τεχνοτροπίας qingbai εκτίθενται δίπλα σε δείγματα τεχνοτροπίας Ding και τεχνοτροπίας Jun. Ο κατάλογος διακρίνει την τεχνοτροπία Cizhou από την τεχνοτροπία διακόσμησης wucai και την τεχνοτροπία famille rose, διατηρώντας τις διαφορές ανάμεσα στις παραδόσεις παραγωγής και διακόσμησης.",
+    "en": "In the Chinese ceramics section, vessels in the Qingbai style are displayed alongside examples in the Ding style and Jun style. The catalogue distinguishes the Cizhou style from the Wucai decoration style and the Famille rose style, preserving the differences between these traditions of production and decoration."
+  },
+  "excavation": {
+    "el": "Στο δελτίο της ανασκαφής καταγράφονται ένα ενεπίγραφο όστρακο, ένας σφραγιδόλιθος και ένα σφράγισμα. Το λεπτό χάλκινο έλασμα φέρει επιγραφή, ενώ το αρχιτεκτονικό μέλος σώζει ανάγλυφο. Η μελέτη συνδυάζει επιγραφική και νομισματική για την ερμηνεία του συνόλου.",
+    "en": "The excavation record lists an inscribed ostracon, a sealstone and an imprint. The thin bronze lamella bears an inscription, while the architectural element preserves a relief. The study draws on epigraphy and numismatics to interpret the assemblage."
+  },
+  "print": {
+    "el": "Η συλλογή εφήμερων περιλαμβάνει ένα τυπογραφικό δοκίμιο, μια αφιερωματική κάρτα Αγίων και ένα πρόγραμμα θεατρικής παράστασης. Η καρτέλα ευρετηρίου διακρίνει το έργο χαρακτικής από τη λιθογραφία. Στο ίδιο αρχείο, το πρωτότυπο που χρησίμευσε ως υπόδειγμα για την παραγωγή αντιγράφων καταγράφεται χωριστά από ένα μεταγενέστερο αντίγραφο.",
+    "en": "The ephemera collection includes a printing proof, a santino and a theatre programme. The card index distinguishes an engraving from a lithograph. In the same archive, the master used as the working model for producing copies is recorded separately from a later replica."
+  }
 };
 const state = {lang:'el', result:null, selected:null, tab:'used', busy:false, view:'studio', stats:null, concepts:new Map(), browsePage:1, browseSeq:0, browseTimer:null, focusBeforeDrawer:null};
 
