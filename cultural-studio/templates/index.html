@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Greek–English cultural heritage translation, informed by specialist-reviewed resources and connected heritage vocabularies.">
+  <meta name="studio-token" content="{{ csrf_token }}">
+  <title>{{ page_title }}</title>
+  <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/studio.js" defer></script>
+</head>
+<body data-initial-view="{{ initial_view }}">
+<header class="site-header">
+  <a class="brand" href="/" aria-label="CulturalMT home"><img src="/static/mark.svg" alt="" width="38" height="38"><span>Cultural<span class="brand-italic">MT</span><small>THE LANGUAGE OF HERITAGE</small></span></a>
+  <nav class="main-nav" aria-label="Main navigation">
+    <a class="nav-item {% if initial_view == 'studio' %}active{% endif %}" href="/" data-view="studio" {% if initial_view == 'studio' %}aria-current="page"{% endif %}>Translate</a>
+    <a class="nav-item {% if initial_view == 'lexicon' %}active{% endif %}" href="/vocabularies" data-view="lexicon" {% if initial_view == 'lexicon' %}aria-current="page"{% endif %}>Vocabularies</a>
+    <a class="nav-item {% if initial_view == 'approach' %}active{% endif %}" href="/approach" data-view="approach" {% if initial_view == 'approach' %}aria-current="page"{% endif %}>Our approach</a>
+  </nav>
+</header>
+<main>
+<section id="studio-view" {% if initial_view != 'studio' %}class="hidden"{% endif %}>
+  <div class="hero">
+    <div class="hero-copy"><div class="eyebrow"><span class="little-line"></span> CULTURAL HERITAGE TRANSLATION</div><h1>Cultural translation.<br><em>With context.</em></h1></div>
+    <div class="artifact" aria-hidden="true"><div class="artifact-orbit"></div><div class="artifact-orbit second"></div><svg class="vase" viewBox="0 0 220 242" fill="none">
+        <g stroke="currentColor" stroke-width="1.25">
+          <path d="M81 24h58l-5 8H86zM89 33v32c0 14-22 25-28 49-11 42 19 62 25 89l-4 9h56l-4-9c6-27 36-47 25-89-6-24-28-35-28-49V33M82 213v6h56v-6M91 220l-6 6h50l-6-6"/>
+          <path d="M88 45C41 26 26 65 49 90l17 13M132 45c47-19 62 20 39 45l-17 13M87 54C51 38 41 67 56 82l14 13M133 54c36-16 46 13 31 28l-14 13"/>
+          <path d="M68 97c22 8 62 8 84 0M62 109c24 9 72 9 96 0M60 122c27 9 74 9 100 0M64 153c25 9 67 9 92 0M70 168c23 8 57 8 80 0M82 197c16 5 41 5 56 0M88 204h44"/>
+          <path d="M71 130v16h8v-12h8v13h8v-12h8v14h9v-14h9v13h8v-12h8v11h9v-15M93 39h34M93 43h34M93 47h34M93 51h34M93 55h34" opacity=".8"/>
+          <path d="M96 172c-7 8-4 15 2 20m10-19c-7 8-4 15 2 20m10-20c-7 8-4 15 2 20"/>
+          <path d="M77 113l2-11m10 13 1-10m10 11v-10m11 10v-10m11 10v-10m11 9-1-10m12 8-3-10"/>
+        </g>
+      </svg><span class="artifact-word word-greek" lang="el">αμφορέας</span><span class="artifact-word word-english">amphora</span></div>
+  </div>
+  <section class="workspace" aria-label="Cultural translation">
+    <div class="translator">
+      <div class="language-bar">
+        <div class="language-title"><span class="lang-code" id="source-code">EL</span><span id="source-language">Greek</span></div>
+        <button class="swap-button" id="swap-button" title="Swap languages" aria-label="Swap translation direction"><svg viewBox="0 0 24 24"><path d="M4 8h16m-4-4 4 4-4 4M20 16H4m4-4-4 4 4 4"/></svg></button>
+        <div class="language-title target-language"><span class="lang-code" id="target-code">EN</span><span id="target-language">English</span></div>
+      </div>
+      <div class="editor-grid">
+        <div class="editor-panel source-panel">
+          <div class="panel-toolbar"><span class="panel-kicker">ORIGINAL TEXT</span><div><button class="text-button hidden" id="edit-button">Edit <span>↗</span></button><button class="icon-button" id="clear-button" aria-label="Clear text" title="Clear"><svg viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17"/></svg></button></div></div>
+          <label class="sr-only" for="source-text">Text to translate</label>
+          <textarea id="source-text" maxlength="6000" spellcheck="false" placeholder="Enter a cultural heritage description…"></textarea>
+          <div id="source-highlighted" class="reading-text hidden" tabindex="0" aria-label="Original text with linked terms"></div>
+          <div class="source-bottom"><span id="char-count">0 / 6,000</span><span class="shortcut">⌘ / Ctrl + Enter</span></div>
+        </div>
+        <div class="editor-panel target-panel">
+          <div class="panel-toolbar"><span class="panel-kicker">TRANSLATION</span><div><span id="result-status" class="result-status"></span><button class="icon-button hidden" id="copy-button" aria-label="Copy translation" title="Copy"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg></button><button class="icon-button hidden" id="download-button" aria-label="Download translation and sources" title="Download"><svg viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></svg></button></div></div>
+          <div id="empty-state" class="empty-state"><div class="empty-symbol"><span>α</span><svg viewBox="0 0 72 28"><path d="M1 14h65m-8-6 7 6-7 6"/></svg><span>a</span></div><p>Your translation will appear here.</p></div>
+          <div id="loading-state" class="loading-state hidden" role="status"><div class="loading-mosaic"><i></i><i></i><i></i><i></i></div><p id="loading-title">Translating…</p><small id="loading-detail">Checking terminology and meaning.</small><div class="loading-track"><span></span></div></div>
+          <div id="target-text" class="reading-text hidden" aria-live="polite"></div>
+        </div>
+      </div>
+      <div class="workspace-actions"><div class="example-wrap" role="group" aria-labelledby="examples-label"><span id="examples-label" class="examples-label">Examples</span><button class="example-button" data-example="ceramics">Chinese ceramics <span>↗</span></button><button class="example-button" data-example="excavation">Inscribed finds <span>↗</span></button><button class="example-button" data-example="print">Print archive <span>↗</span></button></div><button class="translate-button" id="translate-button"><span>Translate</span><svg viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></button></div>
+    </div>
+    <div id="error-message" class="notice error hidden" role="alert"></div><div id="warning-message" class="notice hidden" role="status"></div>
+  </section>
+  <section class="terms-section hidden" id="terms-section" aria-label="Linked terminology">
+    <div class="terms-heading"><div><h2>Terminology<span id="term-total" class="count-badge hidden">0</span></h2></div><p id="terms-explainer"></p></div>
+    <div class="term-tabs hidden" id="term-tabs" role="tablist" aria-label="Term matches"><button id="used-tab" role="tab" aria-selected="true" class="active">Used in translation <span>0</span></button><button id="candidate-tab" role="tab" aria-selected="false">Other matches <span>0</span></button></div>
+    <div id="term-grid" class="term-grid"></div>
+  </section>
+</section>
+
+<section id="lexicon-view" class="lexicon-view {% if initial_view != 'lexicon' %}hidden{% endif %}">
+  <div class="lexicon-hero"><div class="eyebrow">TERMINOLOGY COLLECTION</div><h1>Cultural <em>vocabularies.</em></h1><p>Explore terms, definitions and relationships from seven heritage vocabularies.</p></div>
+  <div class="lexicon-controls"><div class="search-field"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><label class="sr-only" for="lexicon-search">Search vocabularies</label><input id="lexicon-search" placeholder="Search a term, person or place…" autocomplete="off"><kbd>EN / EL</kbd></div><label class="sr-only" for="source-filter">Filter by vocabulary</label><select id="source-filter"><option value="">All vocabularies</option></select><span id="lexicon-count"></span></div>
+  <div class="term-grid lexicon-grid" id="lexicon-grid"></div><button class="load-more hidden" id="load-more">More entries <span>↓</span></button>
+</section>
+
+<section id="approach-view" class="approach-view {% if initial_view != 'approach' %}hidden{% endif %}" aria-labelledby="approach-title">
+  <div class="approach-hero"><div class="eyebrow">RESEARCH & METHODOLOGY</div><h1 id="approach-title">Translation in its<br><em>cultural context.</em></h1><p>CulturalMT combines specialist-reviewed translation resources with connected heritage vocabularies to support precise terminology and traceable sources.</p></div>
+  <section class="research-foundation" aria-labelledby="foundation-title">
+    <div class="research-copy"><span class="section-index">01 / HUMAN REVIEW</span><h2 id="foundation-title">A specialist-reviewed foundation.</h2><p>Our work with domain specialists is reflected in the CulturalMT reference collection: <strong>341 final human-reviewed Greek-to-English translations</strong> in the public dataset’s test split.</p><p>A silver training set of approximately <strong>80,000 automatically prepared translations</strong> complements the reviewed test collection. The reference records retain links to their original SearchCulture entries.</p><a class="research-link" href="https://huggingface.co/datasets/georgefilandr/culturalMT" target="_blank" rel="noopener noreferrer">Explore the CulturalMT dataset <span>↗</span></a></div>
+    <div class="review-card"><span class="eyebrow">CULTURALMT · RESEARCH COLLECTIONS</span><strong>341</strong><span class="review-label">final human-reviewed test translations</span><div class="silver-stat"><strong>~80k</strong><span>silver translations for training</span></div><div class="review-card-bottom"><span>Greek → English</span><span>Research resources</span></div></div>
+  </section>
+  <p class="research-scope">The public release currently lists 62,460 training records. The ~80k figure describes the project’s silver training collection. Specialist review applies to the 341 test translations; new translations in this interface are produced on demand.</p>
+  <section class="connected-section" aria-labelledby="connections-title">
+    <div class="approach-section-heading"><div><span class="section-index">02 / CONNECTED TERMINOLOGY</span><h2 id="connections-title">A term is more than a word pair.</h2></div><p>A vocabulary entry can connect names in both languages to a definition, a broader concept and an identifiable source.</p></div>
+    <figure class="concept-figure">
+      <div class="concept-map" aria-label="An icon linked to its Greek wording, English translation, broader concept and source vocabulary">
+        <button class="map-node map-broader" data-relation-id="b9357b182da7"><small>BROADER CONCEPT</small><strong>Religious visual works</strong><span>↗</span></button>
+        <div class="map-node map-source"><small>SOURCE WORDING</small><strong lang="el">φορητή εικόνα</strong></div>
+        <button class="map-node map-core" data-relation-id="e0645692964b"><small>VOCABULARY CONCEPT</small><strong>Icon</strong><span lang="el">Φορητή Εικόνα</span></button>
+        <div class="map-node map-target"><small>TRANSLATED WORDING</small><strong>portable icon</strong></div>
+        <button class="map-node map-vocabulary" data-source-id="ekt_items_types"><small>SOURCE VOCABULARY</small><strong>EKT · Object types</strong><span>↗</span></button>
+      </div>
+      <figcaption>An example from the collection. Select the concept or its broader term to inspect the source entry.</figcaption>
+    </figure>
+    <div class="principles"><div><span>Meaning</span><p>Choose terminology that fits the passage, including its historical and cultural sense.</p></div><div><span>Evidence</span><p>Show definitions and relationships only where the source vocabulary provides them.</p></div><div><span>Provenance</span><p>Keep the attributed wording connected to the original vocabulary entry.</p></div></div>
+  </section>
+  <section class="vocabulary-section" aria-labelledby="vocabularies-title"><div class="approach-section-heading"><div><span class="section-index">03 / KNOWLEDGE SOURCES</span><h2 id="vocabularies-title">Seven complementary vocabularies.</h2></div><p>{{ concept_count }} entries covering objects, subjects, people, places and historical periods.</p></div>
+    <div class="vocabulary-table-wrap"><table class="vocabulary-table"><thead><tr><th scope="col">Vocabulary</th><th scope="col">Coverage</th><th scope="col">Entries</th></tr></thead><tbody>{% for source in sources %}<tr><td><button data-source-id="{{ source.id }}"><i style="background:{{ source.color }}"></i>{{ source.title_en }}<span>↗</span></button></td><td>{{ vocabulary_notes[source.id] }}</td><td>{{ '{:,}'.format(source.count) }}</td></tr>{% endfor %}</tbody></table></div>
+    <p class="vocabulary-credit">Source records are drawn from the National Documentation Centre’s cultural vocabularies and SearchCulture authority collections. Definitions are retained in their original form; availability varies by entry.</p>
+  </section>
+  <div class="approach-bottom"><span>CulturalMT · Greek–English cultural heritage translation</span><a href="/" data-view="studio">Translate a text <span>→</span></a></div>
+</section>
+</main>
+<footer><a class="footer-brand" href="/">Cultural<i>MT</i><span>Greek–English cultural heritage translation</span></a><a class="footer-approach" href="/approach" data-view="approach">Research & approach <span>↗</span></a></footer>
+<div class="drawer-backdrop hidden" id="drawer-backdrop"></div>
+<aside class="term-drawer hidden" id="term-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1"><div class="drawer-top"><span>VOCABULARY ENTRY</span><button class="icon-button" id="close-drawer" aria-label="Close entry"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="drawer-content"></div></aside>
+<div class="toast hidden" id="toast" role="status"></div>
+</body>
+</html>
