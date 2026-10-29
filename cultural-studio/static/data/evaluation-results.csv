@@ -1,0 +1,20 @@
+group,metric,value,numerator,denominator,unit
+human_judgement,Correct / Acceptable,55.71847507331378,190,341,percent of texts
+human_judgement,Minor issue,37.24340175953079,127,341,percent of texts
+human_judgement,Major issue,7.038123167155425,24,341,percent of texts
+postediting,Unchanged after review,54.27728613569322,184,339,percent of postedit pairs
+postediting,Word minimality,97.24626520868628,,,percent; see definition in JSON
+postediting,Word edit rate,2.7573869594719636,894,32422,edits per 100 postedit word tokens
+postediting,TER against post-edits,2.70020058632927,875,32405,TER edits per 100 reference tokens
+postediting,Character edit rate,2.4055606837865513,,,percent; see definition in JSON
+highlight_category,Terminology error,23.46041055718475,80,341,percent of texts; categories overlap
+highlight_category,Translation error,21.994134897360702,75,341,percent of texts; categories overlap
+highlight_category,Grammar/Syntax error,15.249266862170089,52,341,percent of texts; categories overlap
+highlight_category,Cultural adequacy,6.744868035190616,23,341,percent of texts; categories overlap
+highlight_category,Disambiguation quality,4.9853372434017595,17,341,percent of texts; categories overlap
+highlight_category,Named entity handling,2.932551319648094,10,341,percent of texts; categories overlap
+highlight_category,Culture-specific terms,2.6392961876832843,9,341,percent of texts; categories overlap
+highlight_category,Transliteration quality,1.466275659824047,5,341,percent of texts; categories overlap
+generated_postedit_similarity,chrf,97.47962741698231,,,score /100; see signature in JSON
+generated_postedit_similarity,chrfpp,97.44760956595961,,,score /100; see signature in JSON
+generated_postedit_similarity,bleu,96.1038667577136,,,score /100; see signature in JSON

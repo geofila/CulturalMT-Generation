@@ -179,15 +179,15 @@ function closeDrawer() {
   else document.querySelector(`[data-term-id="${state.selected}"]`)?.focus();
 }
 
-function viewForPath() { return {'/approach':'approach','/vocabularies':'lexicon'}[location.pathname] || 'studio'; }
+function viewForPath() { return {'/approach':'approach','/vocabularies':'lexicon','/evaluation':'evaluation'}[location.pathname] || 'studio'; }
 function setView(view, push = true) {
-  if (!['studio','lexicon','approach'].includes(view)) view = 'studio';
+  if (!['studio','lexicon','approach','evaluation'].includes(view)) view = 'studio';
   state.view = view;
-  for (const name of ['studio','lexicon','approach']) show(name + '-view', view === name);
+  for (const name of ['studio','lexicon','approach','evaluation']) show(name + '-view', view === name);
   document.querySelectorAll('[data-view]').forEach((b) => { b.classList.toggle('active', b.dataset.view === view); if (b.dataset.view === view) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-  const path = {studio:'/',lexicon:'/vocabularies',approach:'/approach'}[view];
+  const path = {studio:'/',lexicon:'/vocabularies',approach:'/approach',evaluation:'/evaluation'}[view];
   if (push && location.pathname !== path) history.pushState({view}, '', path);
-  document.title = {studio:'CulturalMT — Cultural heritage translation',lexicon:'Vocabularies — CulturalMT',approach:'Our approach — CulturalMT'}[view];
+  document.title = {studio:'CulturalMT — Cultural heritage translation',lexicon:'Vocabularies — CulturalMT',approach:'Our approach — CulturalMT',evaluation:'Evaluation — CulturalMT'}[view];
   if (view === 'lexicon') loadLexicon(true);
   window.scrollTo({top:0,behavior:'instant'});
 }
@@ -212,7 +212,7 @@ async function loadLexicon(reset = false) {
 }
 
 async function init() {
-  updateLanguages(); setExample('icon'); setView(document.body.dataset.initialView || viewForPath(), false);
+  updateLanguages(); setExample('ceramics'); setView(document.body.dataset.initialView || viewForPath(), false);
   try {
     const response = await fetch('/api/status'); if (!response.ok) throw new Error();
     state.stats = await response.json();

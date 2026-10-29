@@ -1,3 +1,4 @@
+import json
 import os
 import secrets
 import threading
@@ -9,6 +10,7 @@ from lexicon import Lexicon
 from service import CHAT_MODEL, EMBED_MODEL, Pharos, ProviderError
 
 ROOT = Path(__file__).resolve().parent
+evaluation_data = json.loads((ROOT / 'static' / 'data' / 'evaluation.json').read_text(encoding='utf-8'))
 DICTIONARIES = Path(os.getenv('CULTURALMT_DICTIONARIES', str(ROOT.parent / 'dictionaries')))
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 64 * 1024
@@ -45,11 +47,13 @@ VOCABULARY_NOTES = {
 @app.route('/')
 @app.route('/vocabularies')
 @app.route('/approach')
+@app.route('/evaluation')
 def index():
-    view = {'/approach': 'approach', '/vocabularies': 'lexicon'}.get(request.path, 'studio')
-    titles = {'studio': 'CulturalMT — Cultural heritage translation', 'lexicon': 'Vocabularies — CulturalMT', 'approach': 'Our approach — CulturalMT'}
+    view = {'/approach': 'approach', '/vocabularies': 'lexicon', '/evaluation': 'evaluation'}.get(request.path, 'studio')
+    titles = {'studio': 'CulturalMT — Cultural heritage translation', 'lexicon': 'Vocabularies — CulturalMT', 'approach': 'Our approach — CulturalMT', 'evaluation': 'Evaluation — CulturalMT'}
     return render_template('index.html', csrf_token=csrf_token, initial_view=view, page_title=titles[view],
-                           concept_count=f'{len(lexicon.concepts):,}', sources=lexicon.sources, vocabulary_notes=VOCABULARY_NOTES)
+                           concept_count=f'{len(lexicon.concepts):,}', sources=lexicon.sources, vocabulary_notes=VOCABULARY_NOTES,
+                           evaluation=evaluation_data)
 
 
 @app.route('/api/status')

@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "study": {
+    "id": "culturalmt-human-review-2026",
+    "title": "CulturalMT human-review collection",
+    "direction": "Greek → English",
+    "evaluated_system": "gpt-5-mini-with-hints",
+    "reviewed_texts": 341,
+    "reviewers": 5,
+    "valid_postedit_pairs": 339,
+    "source_characters": [
+      588,
+      600
+    ],
+    "annotation_period": "May–June 2026",
+    "analysis_date": "2026-10-29",
+    "input_sha256": "a9ca116185bffbc3d597806e41cdf47a3d5ebb4e43e186e14bebd95468035888",
+    "unique_source_texts": 340,
+    "cancelled_excluded": 34,
+    "drafts_excluded": 17,
+    "ambiguous_postedits_excluded": 2,
+    "identical_duplicate_submissions_collapsed": 1
+  },
+  "judgements": [
+    {
+      "id": "acceptable",
+      "label": "Correct / Acceptable",
+      "count": 190,
+      "percent": 55.71847507331378
+    },
+    {
+      "id": "minor",
+      "label": "Minor issue",
+      "count": 127,
+      "percent": 37.24340175953079
+    },
+    {
+      "id": "major",
+      "label": "Major issue",
+      "count": 24,
+      "percent": 7.038123167155425
+    }
+  ],
+  "without_major": {
+    "count": 317,
+    "total": 341,
+    "percent": 92.96187683284458
+  },
+  "postediting": {
+    "pairs": 339,
+    "unchanged": 184,
+    "changed": 155,
+    "unchanged_percent": 54.27728613569322,
+    "word_minimality_percent": 97.24626520868628,
+    "word_edit_rate_percent": 2.7573869594719636,
+    "character_edit_rate_percent": 2.4055606837865513,
+    "ter": 2.70020058632927,
+    "ter_edits": 875,
+    "ter_reference_tokens": 32405.0,
+    "generated_words": 32261,
+    "postedit_words": 32422,
+    "word_edits": 894,
+    "substitutions": 513,
+    "deletions": 110,
+    "insertions": 271,
+    "mean_word_edits": 2.6371681415929205,
+    "median_changed_word_edits": 4,
+    "mean_changed_word_edits": 5.767741935483871,
+    "changed_word_edit_rate_percent": 5.996378026695285,
+    "within_five_percent": 275,
+    "within_five_percent_share": 81.12094395280236,
+    "within_ten_percent": 313,
+    "within_ten_percent_share": 92.33038348082596,
+    "bins": [
+      {
+        "label": "0",
+        "count": 184
+      },
+      {
+        "label": "1–2",
+        "count": 51
+      },
+      {
+        "label": "3–5",
+        "count": 51
+      },
+      {
+        "label": "6–10",
+        "count": 29
+      },
+      {
+        "label": ">10",
+        "count": 24
+      }
+    ],
+    "max_pair_word_tokens": 32465
+  },
+  "highlights": {
+    "spans": 390,
+    "label_assignments": 431,
+    "texts": 154,
+    "word_coverage_percent": 2.849573334154832,
+    "character_coverage_percent": 3.051226740318126,
+    "highlighted_words": 925,
+    "generated_words": 32461,
+    "categories": [
+      {
+        "label": "Terminology error",
+        "spans": 136,
+        "documents": 80,
+        "document_percent": 23.46041055718475
+      },
+      {
+        "label": "Translation error",
+        "spans": 125,
+        "documents": 75,
+        "document_percent": 21.994134897360702
+      },
+      {
+        "label": "Grammar/Syntax error",
+        "spans": 77,
+        "documents": 52,
+        "document_percent": 15.249266862170089
+      },
+      {
+        "label": "Cultural adequacy",
+        "spans": 34,
+        "documents": 23,
+        "document_percent": 6.744868035190616
+      },
+      {
+        "label": "Disambiguation quality",
+        "spans": 22,
+        "documents": 17,
+        "document_percent": 4.9853372434017595
+      },
+      {
+        "label": "Named entity handling",
+        "spans": 14,
+        "documents": 10,
+        "document_percent": 2.932551319648094
+      },
+      {
+        "label": "Culture-specific terms",
+        "spans": 14,
+        "documents": 9,
+        "document_percent": 2.6392961876832843
+      },
+      {
+        "label": "Transliteration quality",
+        "spans": 9,
+        "documents": 5,
+        "document_percent": 1.466275659824047
+      }
+    ],
+    "major_texts_with_terminology": 18,
+    "major_texts_total": 24,
+    "edit_localisation": {
+      "postedit_pairs": 339,
+      "changed_original_words": 623,
+      "changed_words_in_highlights": 520,
+      "highlighted_words": 858
+    }
+  },
+  "source_consultation": {
+    "needed": 127,
+    "total": 341,
+    "percent": 37.24340175953079
+  },
+  "similarity": {
+    "ter": {
+      "score": 2.70020058632927,
+      "signature": "nrefs:1|case:lc|tok:tercom|norm:no|punct:yes|asian:no|version:2.6.0",
+      "edits": 875,
+      "reference_tokens": 32405.0
+    },
+    "ter_case_sensitive": {
+      "score": 2.7896929486190403,
+      "signature": "nrefs:1|case:mixed|tok:tercom|norm:no|punct:yes|asian:no|version:2.6.0"
+    },
+    "chrf": {
+      "score": 97.47962741698231,
+      "signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0"
+    },
+    "chrfpp": {
+      "score": 97.44760956595961,
+      "signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:2|space:no|version:2.6.0"
+    },
+    "bleu": {
+      "score": 96.1038667577136,
+      "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0"
+    }
+  },
+  "uncertainty": {
+    "unit": "unique exact Greek-source text; all rows in each cluster retained",
+    "clusters": 340,
+    "resamples": 10000,
+    "seed": 20261029,
+    "ci95": {
+      "acceptable_percent": [
+        50.58139534883721,
+        60.88235294117647
+      ],
+      "acceptable_or_minor_percent": [
+        90.05847953216374,
+        95.58823529411765
+      ],
+      "major_percent": [
+        4.411764705882353,
+        9.941520467836257
+      ],
+      "raw_unchanged_percent": [
+        48.97360703812317,
+        59.58702064896755
+      ],
+      "word_edit_rate_ref_percent": [
+        2.2296847815554495,
+        3.319522207945448
+      ],
+      "word_minimality_percent": [
+        96.68555845642555,
+        97.77276813639438
+      ],
+      "ter_percent": [
+        2.2020418395984125,
+        3.222367552335493
+      ],
+      "char_ned_percent": [
+        1.964441842503863,
+        2.869656575321976
+      ]
+    }
+  },
+  "by_judgement": [
+    {
+      "label": "Correct / Acceptable",
+      "pairs": 189,
+      "median_word_edits": 0.0,
+      "word_edit_rate_percent": 0.12733211537396888,
+      "ter": 0.1274167636142042
+    },
+    {
+      "label": "Minor issue",
+      "pairs": 126,
+      "median_word_edits": 4.0,
+      "word_edit_rate_percent": 6.102704043661622,
+      "ter": 5.914956982131039
+    },
+    {
+      "label": "Major issue",
+      "pairs": 24,
+      "median_word_edits": 4.0,
+      "word_edit_rate_percent": 5.869373345101501,
+      "ter": 6.045895851721094
+    }
+  ],
+  "case_studies": [
+    {
+      "id": "object",
+      "label": "Object identity",
+      "title": "A name becomes an object.",
+      "explanation": "The reviewer replaces a transliterated word with an archaeological object term. A single word carries the identity of the vessel.",
+      "record_id": 402,
+      "generated": {
+        "before": "",
+        "term": "Goudi",
+        "after": ". Disc-shaped base delineated from the body by a groove. Walls with …"
+      },
+      "reviewed": {
+        "before": "",
+        "term": "Mortarium",
+        "after": ". Disc-shaped base delineated from the body by a groove. Walls with …"
+      },
+      "greek_source": "Γουδί. Δισκοειδής βάση που διακρίνεται από το σώμα με μία αυλακιά. Τοιχώματα με ευθύ προφίλ. Χείλος με λοξό προφίλ διακόπτεται από προχοή. Είναι διακοσμημένο με δύο παράλληλες αυλακιές και ανάμεσά τους χαρακτό φιδωτό κόσμημα. Δύο υποτυπώδεις λαβές με εμπίεστα αποτυπώματα έχουν προσαρτηθεί στις πλευρές του, κοντύτερα προς την προχοή. Στην περιοχή δεξιά και αριστερά από την  προχοή, το χείλος έχει υπερυψωθεί με δύο πλαστικές ταινίες απρόσεκτα τοποθετημένες. Όμοια και όλο το αγγείο δε διακρίνεται για την επιμελημένη κατασκευή του. Πηλός χρώματος κεραμιδί, πολύ ανοιχτός, με λίγες ξένες προσμίξεις.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-573914",
+      "rating": "Major issue",
+      "word_edits": 1
+    },
+    {
+      "id": "decoration",
+      "label": "Decoration",
+      "title": "The technique is in the term.",
+      "explanation": "The post-edit distinguishes painted decoration from incision: a small textual change with a specific material meaning.",
+      "record_id": 385,
+      "generated": {
+        "before": "… of circular section are positioned at rim level. ",
+        "term": "Incised",
+        "after": " decoration survives on the exterior surface."
+      },
+      "reviewed": {
+        "before": "… of circular section are positioned at rim level. ",
+        "term": "Painted",
+        "after": " decoration survives on the exterior surface."
+      },
+      "greek_source": "Πήλινη σκυφοειδής κοτύλη. Ακέραιη. Φέρει μικρές αποκρούσεις και πολλά ιζήματα. Τροχήλατο αγγείο. Πηλός ωχροκάστανος. Γάνωμα θαμπό μελανού χρώματος, εσωτερικά και εξωτερικά του αγγείου, απολεπισμένο σε αρκετά σημεία. Ανομοιογενής όπτηση. Το εσωτερικό του αγγείου και η κάτω όψη της βάσης έχουν ερυθρό χρώμα. Η βάση της κοτύλης είναι δακτυλιόσχημη με κοίλη την κάτω όψη, η οποία και κοσμείται με ανάγλυφη σπείρα. Το σώμα είναι ημισφαιρικό, το χείλος κάθετο. Δύο οριζόντιες λαβές, κυκλικής διατομής, τοποθετούνται στο ύψος του χείλους. Στην εξωτερική επιφάνεια του αγγείου διατηρείται γραπτή διακόσμηση.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-450601",
+      "rating": "Minor issue",
+      "word_edits": 1
+    },
+    {
+      "id": "materials",
+      "label": "Materials",
+      "title": "A more specific joining technique.",
+      "explanation": "The reviewer makes the joining technique explicit, reflecting the reference to tin soldering in the Greek description.",
+      "record_id": 514,
+      "generated": {
+        "before": "… diametrically opposite points, rectangular traces of ",
+        "term": "brazing",
+        "after": " remain from the soldering of the now-lost handle attachments."
+      },
+      "reviewed": {
+        "before": "… diametrically opposite points, rectangular traces of ",
+        "term": "tin soldering",
+        "after": " remain from the adhesion of the now-lost handle attachments."
+      },
+      "greek_source": "Χάλκινος ημισφαιρικός κρατήρας. Συμπληρωμένος στον πυθμένα, δεν διατηρούνται οι κινητές πεταλόσχημες λαβές και οι προσφύσεις τους. Έντονα διαβρωμένος. Κατασκευάστηκε με την τεχνική του \"χαμένου κεριού», ομοίως και η βάση που επικολλήθηκε στον πυθμένα. Βάση σε σχήμα ανεστραμμένου εχίνου, με χαμηλή άνω κυλινδρική διαμόρφωση. Σώμα βαθύ ημισφαιρικό. Στενό οριζόντιο χείλος που εξαίρεται περιμετρικά από στενή, κοίλη διατομής κατά πλάτος, ταινία. Κάτω από το χείλος, σε δύο διαμετρικά σημεία, διατηρούνται ορθογώνια ίχνη κασσιτεροκόλλησης από την συγκόλληση των προσφύσεων των λαβών που δεν σώθηκαν.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-680049",
+      "rating": "Major issue",
+      "word_edits": 8
+    },
+    {
+      "id": "attribution",
+      "label": "Attribution",
+      "title": "One word changes the attribution.",
+      "explanation": "The reviewer changes the painter attribution. Named entities can matter as much as the surrounding description.",
+      "record_id": 691,
+      "generated": {
+        "before": "… sepals of the closed lotus buds. Workshop of the ",
+        "term": "Meidias",
+        "after": " Painter."
+      },
+      "reviewed": {
+        "before": "… sepals of the closed lotus buds. Workshop of the ",
+        "term": "Beldam",
+        "after": " Painter."
+      },
+      "greek_source": "Αττική μελανόμορφη λήκυθος. Πηλός πορτοκαλόχρωμος, μελανό γάνωμα. Στον ώμο διακόσμηση με δύο επάλληλες σειρές από ακτινωτές γραμμές. ΣΤο σώμα διακόσμηση με τρία κάθετα ανθέμια, ανάμεσα στα οποία παρεμβάλλονται τέσσερα σχηματοποιημένα, κλειστά άνθη λωτού, τα σέπαλα των οποίων αποδίδονται με λευκό επίθετο χρώμα. Οι λεπτομέρειες των ανθεμίων αποδίδονται με χάραξη. Τα ανθέμια ορίζονται από κάτω με μια ζώνη αλυσιδωτού κοσμήματος και περιβάλλονται από τόξο λευκού χρώματος που σχηματίζεται από επέκταση των φύλλων ή των σεπάλων των κλειστών άνθεων λωτού. Εργαστήριο του ζωγράφου της Μέγαιρας.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-800568",
+      "rating": "Major issue",
+      "word_edits": 1
+    },
+    {
+      "id": "sacred",
+      "label": "Sacred objects",
+      "title": "A specialist architectural term.",
+      "explanation": "The reviewer uses “ciborium” for the column-supported form described in the source, distinguishing it from the reliquary’s chest-like shape.",
+      "record_id": 751,
+      "generated": {
+        "before": "… casket-shaped reliquary, in the form of a small ",
+        "term": "casket",
+        "after": " supported by columns. It bears inlaid vegetal and geometric decoration …"
+      },
+      "reviewed": {
+        "before": "… casket-shaped reliquary, in the form of a small ",
+        "term": "ciborium",
+        "after": " supported by columns. It bears inlaid vegetal and geometric decoration …"
+      },
+      "greek_source": "Οκτάπλευρη αργυρή κιβωτιόσχημη λειψανοθήκη, σε σχήμα κιονοστήρικτου κιβωρίου. Φέρει ένθετο φυτικό και γεωμετρικό διάκοσμο από σμάλτο και ανάγλυφο και στικτό φυτικό και γεωμετρικό διάκοσμο στην πολύπλευρη βάση στο κάτω μέρος. Στο κέντρο εξωτερικά της μπροστινής όψης υπάρχει αγιογραφημένη παράσταση του Αγίου Αγάθωνος. Ο θόλος του κουβουκλίου αποσπάται και στο εσωτερικό είναι τοποθετημένο κιβώτιο με ιερό λείψανο του αγίου και συνοδευτική επιγραφή: ΙΕΡΟ ΛΕΙΨΑΝΟ ΟΣΙΟΥ ΑΓΑΘΩΝΟΣ ΤΟΥ ΚΤΙΤΟΡΟΣ ΤΗΣ Ι. Μ. Στο άνω τμήμα της βάσης του κιβωρίου σώζεται εγχάρακτη επιγραφή: ΙΕΡΑ ΜΟΝΗ ΑΓΑΘΩΝΟΣ 1987.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-809240",
+      "rating": "Minor issue",
+      "word_edits": 2
+    },
+    {
+      "id": "anatomy",
+      "label": "Vessel anatomy",
+      "title": "From transliteration to meaning.",
+      "explanation": "The reviewer renders the vessel’s mouth as an object feature, replacing the transliterated form in this excerpt.",
+      "record_id": 463,
+      "generated": {
+        "before": "… amphoriskos. Incomplete with regard to the handles, the ",
+        "term": "Stómio",
+        "after": " and the pseudostómio. Broken and repaired, filled with white gypsum. …"
+      },
+      "reviewed": {
+        "before": "… amphoriskos. Incomplete with regard to the handles, ",
+        "term": "mouth",
+        "after": ", and pseudo-mouth. Reassembled and restored with white plaster. …"
+      },
+      "greek_source": "Ψευδόστομος απιόσχημος αμφορίσκος. Ελλιπής ως προς τις λαβές, το στόμιο και το ψευδοστόμιο. Συγκολλημένος και συμπληρωμένος με λευκό γύψο. Φέρει πολλές αποκρούσεις και ρωγμές. Ιζήματα και διάβρωση του υλικού. Πηλός υπόλευκος, επίχρισμα στο χρώμα του πηλού. Βάση δακτυλιόσχημη, σώμα απιόσχημο, ώμος έντονα καμπύλος. Σώζονται οι βάσεις των λαιμών του στομίου και του ψευδοστομίου. Φαίνεται ότι το στόμιο είναι τοποθετημένο ελαφρώς λοξότερα του ψευδοστομίου. Το αγγείο κοσμείται γραπτώς με βαφή καστανού χρώματος, εντελώς απολεπισμένη. Διακρίνονται ίχνη (αποτυπώματα) της διακόσμησης. Ταφικό κτέρισμα.",
+      "source_url": "https://www.searchculture.gr/aggregator/edm/mnam/000150-418305",
+      "rating": "Minor issue",
+      "word_edits": 20
+    }
+  ],
+  "methods": {
+    "word_token_regex": "[^\\W_]+(?:['’‐‑–-][^\\W_]+)*",
+    "word_edit_rate": "100 * sum(word_Levenshtein) / sum(postedit_words)",
+    "word_minimality": "100 * (1 - sum(word_Levenshtein)/sum(max(generated_words,postedit_words)))",
+    "character_edit_rate": "100 * sum(char_Levenshtein) / sum(max(len(gen),len(post))); NFC and collapsed whitespace",
+    "ter": "SacreBLEU TER against human post-edits (HTER-style); one post-edited reference per text",
+    "ter_signature": "nrefs:1|case:lc|tok:tercom|norm:no|punct:yes|asian:no|version:2.6.0",
+    "word_normalization": "Unicode NFC; case-sensitive; punctuation excluded; internal apostrophes and hyphens retained",
+    "headline_scope": "Results describe the CulturalMT human-review collection of terminology-guided Greek-to-English translations.",
+    "highlight_categories": "Multiple labels may be assigned to the same span or text. Coverage counts overlapping original word tokens once."
+  },
+  "ambiguity_sensitivity": [
+    {
+      "selection": "first_distinct_submission",
+      "n": 341,
+      "raw_unchanged": 184,
+      "word_edit_rate_ref_pct": 2.783739039793979,
+      "word_minimality_pct": 97.2202663401194,
+      "ter_pct": 2.729977608048833
+    },
+    {
+      "selection": "last_distinct_submission",
+      "n": 341,
+      "raw_unchanged": 186,
+      "word_edit_rate_ref_pct": 2.7404818833915763,
+      "word_minimality_pct": 97.26312566967702,
+      "ter_pct": 2.6836374789142767
+    }
+  ],
+  "references": [
+    {
+      "title": "CulturalMT reference dataset",
+      "url": "https://huggingface.co/datasets/georgefilandr/culturalMT"
+    },
+    {
+      "title": "Snover et al. · Translation Edit Rate (2006)",
+      "url": "https://aclanthology.org/2006.amta-papers.25/"
+    },
+    {
+      "title": "Popović · chrF (2015)",
+      "url": "https://aclanthology.org/W15-3049/"
+    },
+    {
+      "title": "Post · Reproducible metric reporting (2018)",
+      "url": "https://aclanthology.org/W18-6319/"
+    }
+  ]
+}

@@ -8,7 +8,9 @@
   <title>{{ page_title }}</title>
   <link rel="icon" href="/static/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/evaluation.css">
   <script src="/static/studio.js" defer></script>
+  <script src="/static/evaluation.js" defer></script>
 </head>
 <body data-initial-view="{{ initial_view }}">
 <header class="site-header">
@@ -17,6 +19,7 @@
     <a class="nav-item {% if initial_view == 'studio' %}active{% endif %}" href="/" data-view="studio" {% if initial_view == 'studio' %}aria-current="page"{% endif %}>Translate</a>
     <a class="nav-item {% if initial_view == 'lexicon' %}active{% endif %}" href="/vocabularies" data-view="lexicon" {% if initial_view == 'lexicon' %}aria-current="page"{% endif %}>Vocabularies</a>
     <a class="nav-item {% if initial_view == 'approach' %}active{% endif %}" href="/approach" data-view="approach" {% if initial_view == 'approach' %}aria-current="page"{% endif %}>Our approach</a>
+    <a class="nav-item {% if initial_view == 'evaluation' %}active{% endif %}" href="/evaluation" data-view="evaluation" {% if initial_view == 'evaluation' %}aria-current="page"{% endif %}>Evaluation</a>
   </nav>
 </header>
 <main>
@@ -100,8 +103,9 @@
   </section>
   <div class="approach-bottom"><span>CulturalMT · Greek–English cultural heritage translation</span><a href="/" data-view="studio">Translate a text <span>→</span></a></div>
 </section>
+{% include 'evaluation.html' %}
 </main>
-<footer><a class="footer-brand" href="/">Cultural<i>MT</i><span>Greek–English cultural heritage translation</span></a><a class="footer-approach" href="/approach" data-view="approach">Research & approach <span>↗</span></a></footer>
+<footer><a class="footer-brand" href="/">Cultural<i>MT</i><span>Greek–English cultural heritage translation</span></a><div class="footer-links"><a class="footer-approach" href="/approach" data-view="approach">Research & approach <span>↗</span></a><a class="footer-approach" href="/evaluation" data-view="evaluation">Evaluation <span>↗</span></a></div></footer>
 <div class="drawer-backdrop hidden" id="drawer-backdrop"></div>
 <aside class="term-drawer hidden" id="term-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1"><div class="drawer-top"><span>VOCABULARY ENTRY</span><button class="icon-button" id="close-drawer" aria-label="Close entry"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="drawer-content"></div></aside>
 <div class="toast hidden" id="toast" role="status"></div>

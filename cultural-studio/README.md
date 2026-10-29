@@ -39,6 +39,14 @@ Optional environment variables:
 - Copy the translated text or download a JSON record containing the translation, aligned terms and provenance.
 - Responsive museum-inspired layout, system fonts, no external UI resources.
 
+## Evaluation page
+
+`/evaluation` presents the CulturalMT human-review study: 341 Greek-to-English descriptions assessed by five reviewers, with 339 unambiguous generated/post-edit pairs used for editing metrics. It includes the complete judgement distribution, exact-match rate, defined word minimality, TER against human post-edits, edit-size and highlight-category charts, six source-linked reviewer edits and expandable measurement details. Charts can switch between all/changed pairs and text/highlight category counts. All content and native interactive controls are available without an inference key.
+
+The versioned aggregate results and curated excerpts live in `static/data/evaluation.json`; `static/data/evaluation-results.csv` is a compact metrics download. They contain no reviewer identities, private comments or draft annotations. The JSON retains the evaluated system identifier and metric signatures for provenance. Results describe this reviewed collection; wording preservation, editing distance and human quality judgements are reported as separate measures.
+
+The published totals are checked against edit-operation identities, explicit token denominators and category assignments. The two records with conflicting submitted versions are excluded from the main post-edit metrics; one identical duplicate submission is counted once. The 95% intervals use 10,000 bootstrap resamples grouped by exact Greek source text. The page also includes a sensitivity check and the TER/chrF/BLEU metric definitions.
+
 ## Retrieval and translation
 
 1. Normalize diacritics and Greek final sigma for lookup, while retaining original character offsets.
