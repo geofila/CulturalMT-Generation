@@ -212,7 +212,7 @@ async function loadLexicon(reset = false) {
 }
 
 async function init() {
-  updateLanguages(); setExample('ceramics'); setView(document.body.dataset.initialView || viewForPath(), false);
+  updateLanguages(); setExample('print'); setView(document.body.dataset.initialView || viewForPath(), false);
   try {
     const response = await fetch('/api/status'); if (!response.ok) throw new Error();
     state.stats = await response.json();

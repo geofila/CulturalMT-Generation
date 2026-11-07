@@ -1,0 +1,24 @@
+/* Readable secondary controls and a restrained acknowledgement of PHAROS. */
+.workspace-actions{gap:20px;flex-wrap:wrap;padding:18px 22px}
+.example-wrap{gap:10px;flex-wrap:wrap;flex:1;min-width:0}
+.example-wrap>.examples-label{display:inline-block;font-size:13px;letter-spacing:.2px;color:#75806d;margin-right:3px}
+.example-wrap .example-button{display:inline-flex;align-items:center;font-size:13px;line-height:1.5;padding:9px 11px;white-space:nowrap}
+.example-wrap .example-button span{font-size:13px;padding-left:9px}
+.workspace-actions .translate-button{flex-shrink:0}
+footer{flex-wrap:wrap;row-gap:24px;padding-top:28px;padding-bottom:24px}
+footer .footer-links{gap:27px;flex-wrap:wrap}
+footer .footer-approach{font-size:14px;line-height:1.7;color:#75826a;letter-spacing:0}
+footer .footer-approach span{margin-left:10px}
+footer .footer-brand>span{display:block;font-size:12px;line-height:1.7;color:#859079}
+.footer-powered{flex-basis:100%;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid var(--line);padding-top:20px}
+.footer-powered p{font:13px/1.8 var(--sans);color:#7f8a74;margin:0}
+.footer-powered strong{font-weight:500;color:#617458}
+.footer-powered img{display:block;width:138px;height:auto;flex-shrink:0}
+.pharos-funding{display:flex;align-items:center;justify-content:space-between;gap:40px;margin-top:36px;padding:30px 0 5px;border-top:1px solid var(--line)}
+.pharos-funding>div{max-width:610px}
+.pharos-funding p{font-size:13px;line-height:1.9;color:#7d8a72;margin:0}
+.pharos-funding p strong{font-weight:500;color:#607653}
+.pharos-funding img{display:block;width:205px;max-width:28%;height:auto}
+@media(max-width:1000px){.workspace-actions{padding:16px 18px;gap:15px}.example-wrap{gap:8px}.example-wrap>.examples-label{flex-basis:100%;margin-bottom:2px}.example-wrap .example-button{font-size:13px;padding:8px 10px}.footer-brand{flex-wrap:wrap}footer .footer-brand>span{flex-basis:100%;margin-left:0}.footer-powered{padding-top:19px}}
+@media(max-width:780px){.workspace-actions{align-items:center}.example-wrap .example-button:last-child{display:inline-flex}footer .footer-links{gap:23px}footer .footer-approach{font-size:14px}.pharos-funding{gap:25px}.pharos-funding p{font-size:12px}.pharos-funding img{width:180px}}
+@media(max-width:520px){.workspace-actions{align-items:stretch;padding:16px 18px;gap:16px}.example-wrap{gap:9px;flex:auto}.example-wrap>.examples-label{font-size:13px;letter-spacing:0;flex-basis:100%;margin-bottom:3px}.example-wrap .example-button{font-size:13px;padding:9px 11px}.example-wrap .example-button span{font-size:12px}.workspace-actions .translate-button{font-size:13px}footer{gap:23px;align-items:flex-start}footer .footer-brand{flex-basis:100%;gap:9px 12px}footer .footer-brand>span{font-size:12px}footer .footer-links{flex-basis:100%;gap:28px}footer .footer-approach{font-size:14px}.footer-powered{align-items:flex-start;flex-direction:column;gap:16px;padding-top:21px}.footer-powered p{font-size:13px;max-width:300px}.footer-powered img{width:145px}.pharos-funding{align-items:flex-start;flex-direction:column;gap:23px;margin-top:30px;padding-top:26px}.pharos-funding img{width:180px;max-width:70%}.pharos-funding p{font-size:13px}}
